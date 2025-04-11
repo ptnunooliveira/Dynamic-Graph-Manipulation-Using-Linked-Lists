@@ -1,0 +1,44 @@
+\doxysection{funcoes.\+h}
+\hypertarget{funcoes_8h_source}{}\label{funcoes_8h_source}\index{C:/Users/ptnun/Desktop/1º ANO/1º ano -\/ 2º semestre/Estrutura de Dados Avançado/ProjetoEDA/ProjectEDA/Repositorio/ProjectEDA/src/funcoes.h@{C:/Users/ptnun/Desktop/1º ANO/1º ano -\/ 2º semestre/Estrutura de Dados Avançado/ProjetoEDA/ProjectEDA/Repositorio/ProjectEDA/src/funcoes.h}}
+\mbox{\hyperlink{funcoes_8h}{Ir para a documentação deste ficheiro.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{funcoes_8h_source_l00001}00001\ \textcolor{comment}{/*****************************************************************/}}
+\DoxyCodeLine{\Hypertarget{funcoes_8h_source_l00009}00009\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{\Hypertarget{funcoes_8h_source_l00010}00010\ }
+\DoxyCodeLine{\Hypertarget{funcoes_8h_source_l00011}00011\ \textcolor{preprocessor}{\#include\ <stdio.h>}}
+\DoxyCodeLine{\Hypertarget{funcoes_8h_source_l00012}00012\ \textcolor{preprocessor}{\#include\ <malloc.h>}}
+\DoxyCodeLine{\Hypertarget{funcoes_8h_source_l00013}00013\ \textcolor{preprocessor}{\#include\ <stdbool.h>}}
+\DoxyCodeLine{\Hypertarget{funcoes_8h_source_l00014}00014\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{antena_8h}{antena.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{funcoes_8h_source_l00015}00015\ }
+\DoxyCodeLine{\Hypertarget{funcoes_8h_source_l00016}00016\ }
+\DoxyCodeLine{\Hypertarget{funcoes_8h_source_l00025}00025\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{funcoes_8h_a46b230827ab67f4fb17e510c95c8eb78}{LerListasBinario}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ NomeFicheiro,\ \mbox{\hyperlink{struct_antena}{Antena}}**\ head);}
+\DoxyCodeLine{\Hypertarget{funcoes_8h_source_l00026}00026\ }
+\DoxyCodeLine{\Hypertarget{funcoes_8h_source_l00035}00035\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{funcoes_8h_a712e091c7ec2c33a82ebcee9a6d816eb}{GuardarListasBinario}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ NomeFicheiro,\ \mbox{\hyperlink{struct_antena}{Antena}}*\ head);}
+\DoxyCodeLine{\Hypertarget{funcoes_8h_source_l00036}00036\ }
+\DoxyCodeLine{\Hypertarget{funcoes_8h_source_l00045}00045\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{funcoes_8h_abb5d7985df30dbddf25c7aa3e6719c1d}{LerFicheiro}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ NomeFicheiro,\ \mbox{\hyperlink{struct_antena}{Antena}}**\ head);}
+\DoxyCodeLine{\Hypertarget{funcoes_8h_source_l00046}00046\ }
+\DoxyCodeLine{\Hypertarget{funcoes_8h_source_l00055}00055\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{funcoes_8h_ad668f46247c5c4a760e917a4d3aa0a04}{GravarFicheiro}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ NomeFicheiro,\ \mbox{\hyperlink{struct_antena}{Antena}}*\ head,\ \mbox{\hyperlink{struct_antena}{Antena}}*\ headnefasto);}
+\DoxyCodeLine{\Hypertarget{funcoes_8h_source_l00056}00056\ }
+\DoxyCodeLine{\Hypertarget{funcoes_8h_source_l00066}00066\ \mbox{\hyperlink{struct_antena}{Antena}}*\ \mbox{\hyperlink{funcoes_8h_a63faadcb42866ab37d6e0c81d3660ba8}{CriarAntena}}(\textcolor{keywordtype}{int}\ linha,\ \textcolor{keywordtype}{int}\ coluna,\ \textcolor{keywordtype}{char}\ tipoantena);}
+\DoxyCodeLine{\Hypertarget{funcoes_8h_source_l00067}00067\ }
+\DoxyCodeLine{\Hypertarget{funcoes_8h_source_l00076}00076\ \mbox{\hyperlink{struct_antena}{Antena}}*\ \mbox{\hyperlink{funcoes_8h_a21e4d67a05d65e74c00c1b581cc08b5c}{InserirAntena}}(\mbox{\hyperlink{struct_antena}{Antena}}*\ head,\ \mbox{\hyperlink{struct_antena}{Antena}}*\ nova);}
+\DoxyCodeLine{\Hypertarget{funcoes_8h_source_l00077}00077\ }
+\DoxyCodeLine{\Hypertarget{funcoes_8h_source_l00085}00085\ \mbox{\hyperlink{struct_antena}{Antena}}*\ \mbox{\hyperlink{funcoes_8h_a814b78dab888559e35127ad614acb7b2}{CriarZonasNefastas}}(\mbox{\hyperlink{struct_antena}{Antena}}*\ head);}
+\DoxyCodeLine{\Hypertarget{funcoes_8h_source_l00086}00086\ }
+\DoxyCodeLine{\Hypertarget{funcoes_8h_source_l00095}00095\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{funcoes_8h_a628d924355896767718f5d13ab97d734}{MostrarMatriz}}(\mbox{\hyperlink{struct_antena}{Antena}}*\ head,\ \mbox{\hyperlink{struct_antena}{Antena}}*\ headnefasto);}
+\DoxyCodeLine{\Hypertarget{funcoes_8h_source_l00096}00096\ }
+\DoxyCodeLine{\Hypertarget{funcoes_8h_source_l00106}00106\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{funcoes_8h_ae4be178f492709f6afbb03efab469839}{RemoverAntena}}(\mbox{\hyperlink{struct_antena}{Antena}}**\ head,\ \textcolor{keywordtype}{int}\ linha,\ \textcolor{keywordtype}{int}\ coluna);}
+\DoxyCodeLine{\Hypertarget{funcoes_8h_source_l00107}00107\ }
+\DoxyCodeLine{\Hypertarget{funcoes_8h_source_l00108}00108\ }
+\DoxyCodeLine{\Hypertarget{funcoes_8h_source_l00109}00109\ \textcolor{comment}{//\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/\ //}}
+\DoxyCodeLine{\Hypertarget{funcoes_8h_source_l00110}00110\ }
+\DoxyCodeLine{\Hypertarget{funcoes_8h_source_l00111}00111\ \textcolor{comment}{//\ FUN{\ucr}{\ucr}ES\ TESTE}}
+\DoxyCodeLine{\Hypertarget{funcoes_8h_source_l00112}00112\ }
+\DoxyCodeLine{\Hypertarget{funcoes_8h_source_l00113}00113\ }
+\DoxyCodeLine{\Hypertarget{funcoes_8h_source_l00114}00114\ \textcolor{keywordtype}{int}\ mostrarLista(\mbox{\hyperlink{struct_antena}{Antena}}*\ head);}
+\DoxyCodeLine{\Hypertarget{funcoes_8h_source_l00115}00115\ }
+\DoxyCodeLine{\Hypertarget{funcoes_8h_source_l00116}00116\ \textcolor{keywordtype}{int}\ mostrarListaNEFASTOS(\mbox{\hyperlink{struct_antena}{Antena}}*\ headnefasto);}
+\DoxyCodeLine{\Hypertarget{funcoes_8h_source_l00117}00117\ }
+\DoxyCodeLine{\Hypertarget{funcoes_8h_source_l00118}00118\ \textcolor{keywordtype}{void}\ ImprimirConteudoBinario(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ NomeFicheiro);}
+
+\end{DoxyCode}

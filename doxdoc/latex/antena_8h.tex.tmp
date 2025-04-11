@@ -1,0 +1,40 @@
+\doxysection{Referência ao ficheiro C\+:/\+Users/ptnun/\+Desktop/1º ANO/1º ano -\/ 2º semestre/\+Estrutura de Dados Avançado/\+Projeto\+EDA/\+Project\+EDA/\+Repositorio/\+Project\+EDA/src/antena.h}
+\hypertarget{antena_8h}{}\label{antena_8h}\index{C:/Users/ptnun/Desktop/1º ANO/1º ano -\/ 2º semestre/Estrutura de Dados Avançado/ProjetoEDA/ProjectEDA/Repositorio/ProjectEDA/src/antena.h@{C:/Users/ptnun/Desktop/1º ANO/1º ano -\/ 2º semestre/Estrutura de Dados Avançado/ProjetoEDA/ProjectEDA/Repositorio/ProjectEDA/src/antena.h}}
+
+
+Ficheiro com a declaração das structs utilizadas nas listas.  
+
+
+Este grafo mostra quais são os ficheiros que incluem directamente ou indirectamente este ficheiro\+:
+% FIG 0
+\doxysubsubsection*{Estruturas de Dados}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_antena}{Antena}}
+\item 
+struct \mbox{\hyperlink{struct_antena_file}{Antena\+File}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Definições de tipos}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{antena_8h_a843ab8b81393e8ebb3eb6b76e349acc2}\label{antena_8h_a843ab8b81393e8ebb3eb6b76e349acc2} 
+typedef struct Antena {\bfseries Antena}
+\item 
+\Hypertarget{antena_8h_a16da9405e5b4eb4ca026beaf85ba9fc6}\label{antena_8h_a16da9405e5b4eb4ca026beaf85ba9fc6} 
+typedef struct Antena\+File {\bfseries Antena\+File}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descrição detalhada}
+Ficheiro com a declaração das structs utilizadas nas listas. 
+
+\begin{DoxyAuthor}{Autor}
+ptnunooliveira 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Data}
+March 2025 
+\end{DoxyDate}
+
+
+Definido no ficheiro \mbox{\hyperlink{antena_8h_source}{antena.\+h}}.
+
