@@ -1,0 +1,14 @@
+<map id="Grafos.h" name="Grafos.h">
+<area shape="rect" id="Node000001" title="Ficheiro que contem as structs usadas." alt="" coords="60,5,137,31"/>
+<area shape="rect" id="Node000002" href="$Funcoes_8h.html" title="Ficheiro que cont�m as assinaturas das fun��es usadas em Funcoes.c." alt="" coords="55,79,142,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="101,44,101,79,96,79,96,44"/>
+<area shape="rect" id="Node000003" href="$Buscas_8h.html" title="Ficheiro que contém as assinaturas usadas em Buscas.c." alt="" coords="5,152,85,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="76,116,49,153,45,150,72,113"/>
+<area shape="rect" id="Node000005" href="$Funcoes_8c.html" title="Implementação de funções para manipulação de grafos." alt="" coords="110,152,197,177"/>
+<area shape="poly" id="edge5_Node000002_Node000005" title=" " alt="" coords="118,113,147,150,142,154,114,117"/>
+<area shape="rect" id="Node000006" href="$main_8c_source.html" title=" " alt="" coords="221,152,288,177"/>
+<area shape="poly" id="edge6_Node000002_Node000006" title=" " alt="" coords="137,107,230,149,228,154,135,112"/>
+<area shape="poly" id="edge4_Node000003_Node000002" title=" " alt="" coords="68,140,95,103,99,106,72,143"/>
+<area shape="rect" id="Node000004" href="$Buscas_8c.html" title="Ficheiro que contém os algoritmos necessários para a Depth First Traversal e Breadth First Traversal." alt="" coords="6,225,85,251"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="48,191,48,225,43,225,43,191"/>
+</map>

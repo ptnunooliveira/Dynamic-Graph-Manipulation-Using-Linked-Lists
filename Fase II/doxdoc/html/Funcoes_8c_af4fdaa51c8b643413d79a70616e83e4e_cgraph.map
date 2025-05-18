@@ -1,0 +1,7 @@
+<map id="CalcularArestas" name="CalcularArestas">
+<area shape="rect" id="Node000001" title="Função para calcular as Arestas." alt="" coords="5,31,129,56"/>
+<area shape="rect" id="Node000002" href="$Funcoes_8c.html#a500e4d8d01f7969a164bfb3517cc3338" title="Função para criar uma Aresta." alt="" coords="183,5,277,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="129,31,168,25,169,30,130,36"/>
+<area shape="rect" id="Node000003" href="$Funcoes_8c.html#a3ac73fe468fdc3985b2bfd484b27fbc7" title="Função para inserir uma Aresta na respetiva lista." alt="" coords="177,55,283,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="130,50,164,55,163,60,129,55"/>
+</map>

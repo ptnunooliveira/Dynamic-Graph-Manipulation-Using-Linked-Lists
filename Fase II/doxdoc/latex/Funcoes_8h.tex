@@ -1,0 +1,512 @@
+\doxysection{Referência ao ficheiro Funcoes.\+h}
+\hypertarget{Funcoes_8h}{}\label{Funcoes_8h}\index{Funcoes.h@{Funcoes.h}}
+
+
+Ficheiro que cont{\ucr}m as assinaturas das fun{\ucr}{\ucr}es usadas em \doxylink{Funcoes_8c}{Funcoes.\+c}.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+{\ttfamily \#include "{}malloc.\+h"{}}\newline
+{\ttfamily \#include "{}Grafos.\+h"{}}\newline
+{\ttfamily \#include "{}Buscas.\+h"{}}\newline
+Diagrama de dependências de inclusão para Funcoes.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Funcoes_8h__incl}
+\end{center}
+\end{figure}
+Este grafo mostra quais são os ficheiros que incluem directamente ou indirectamente este ficheiro\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=292pt]{Funcoes_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Funções}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structAntena}{Antena}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{Funcoes_8h_ad4af5efcb0c2442000fbd5474482ed3a}{Criar\+Antena}} (int linha, int coluna, char tipo\+Antena, int \texorpdfstring{$\ast$}{*}id, int \texorpdfstring{$\ast$}{*}val)
+\begin{DoxyCompactList}\small\item\em Função para criar uma \doxylink{structAntena}{Antena}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structAntena}{Antena}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{Funcoes_8h_a467dabf8a49fd4d8bc39021e9434c88c}{Inserir\+Antena}} (\mbox{\hyperlink{structAntena}{Antena}} \texorpdfstring{$\ast$}{*}head, \mbox{\hyperlink{structAntena}{Antena}} \texorpdfstring{$\ast$}{*}nova, int \texorpdfstring{$\ast$}{*}val)
+\begin{DoxyCompactList}\small\item\em Função para inserir uma \doxylink{structAntena}{Antena} na respetiva lista. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structArestas}{Arestas}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{Funcoes_8h_a500e4d8d01f7969a164bfb3517cc3338}{Criar\+Aresta}} (\mbox{\hyperlink{structAntena}{Antena}} \texorpdfstring{$\ast$}{*}origem, int destino\+ID, int distancia, int \texorpdfstring{$\ast$}{*}val)
+\begin{DoxyCompactList}\small\item\em Função para criar uma Aresta. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structArestas}{Arestas}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{Funcoes_8h_a3ac73fe468fdc3985b2bfd484b27fbc7}{Inserir\+Aresta}} (\mbox{\hyperlink{structArestas}{Arestas}} \texorpdfstring{$\ast$}{*}head, \mbox{\hyperlink{structArestas}{Arestas}} \texorpdfstring{$\ast$}{*}nova, int \texorpdfstring{$\ast$}{*}val)
+\begin{DoxyCompactList}\small\item\em Função para inserir uma Aresta na respetiva lista. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structAntena}{Antena}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{Funcoes_8h_ad4ebad78f96b698698e900d209ed0092}{Ligar\+Antenas\+Arestas}} (\mbox{\hyperlink{structAntena}{Antena}} \texorpdfstring{$\ast$}{*}antena\+Head, \mbox{\hyperlink{structArestas}{Arestas}} \texorpdfstring{$\ast$}{*}arestas\+Head, int \texorpdfstring{$\ast$}{*}val)
+\begin{DoxyCompactList}\small\item\em Função para ligar as \doxylink{structArestas}{Arestas} às respetivas Antenas de origem. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structArestas}{Arestas}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{Funcoes_8h_af4fdaa51c8b643413d79a70616e83e4e}{Calcular\+Arestas}} (\mbox{\hyperlink{structAntena}{Antena}} \texorpdfstring{$\ast$}{*}antena\+Head, \mbox{\hyperlink{structArestas}{Arestas}} \texorpdfstring{$\ast$}{*}arestas\+Head, int \texorpdfstring{$\ast$}{*}val)
+\begin{DoxyCompactList}\small\item\em Função para calcular as \doxylink{structArestas}{Arestas}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structAntena}{Antena}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{Funcoes_8h_afb5114ede97ca32d3de49fbf335748f2}{Ligar\+Antena\+Destino\+Antena\+Id}} (\mbox{\hyperlink{structAntena}{Antena}} \texorpdfstring{$\ast$}{*}antena\+Head, int \texorpdfstring{$\ast$}{*}val)
+\begin{DoxyCompactList}\small\item\em Função que liga a variável id ao destino da Aresta. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structAntena}{Antena}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{Funcoes_8h_a111dfbf7ea252c28e95f431c20cfc22a}{Remover\+Antena}} (\mbox{\hyperlink{structAntena}{Antena}} \texorpdfstring{$\ast$}{*}antena\+Head, int antena\+ID, int \texorpdfstring{$\ast$}{*}val)
+\begin{DoxyCompactList}\small\item\em Função para Remover uma \doxylink{structAntena}{Antena} e as respetivas \doxylink{structArestas}{Arestas} do grafo. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structAntena}{Antena}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{Funcoes_8h_a7cc58d72f39536ab43bafee7e5b5512b}{Ler\+Ficheiro}} (char \texorpdfstring{$\ast$}{*}nome\+Ficheiro, \mbox{\hyperlink{structAntena}{Antena}} \texorpdfstring{$\ast$}{*}antena\+Head, int \texorpdfstring{$\ast$}{*}id, int \texorpdfstring{$\ast$}{*}val)
+\begin{DoxyCompactList}\small\item\em Função para ler dados a partir de um ficheiro não binário. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{Funcoes_8h_ae1bebfa8e5dbb1056c0573a99a5df8f5}{Gravar\+Ficheiro}} (char \texorpdfstring{$\ast$}{*}nome\+Ficheiro, \mbox{\hyperlink{structAntena}{Antena}} \texorpdfstring{$\ast$}{*}antena\+Head)
+\begin{DoxyCompactList}\small\item\em Função que permite gravar apenas a posição das Antenas num ficheiro não binário. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{Funcoes_8h_a66fd200f181fa474c82922e30f81b1a4}{Gravar\+Ficheiro\+Binario}} (char \texorpdfstring{$\ast$}{*}nome\+Ficheiro, \mbox{\hyperlink{structAntena}{Antena}} \texorpdfstring{$\ast$}{*}antena\+Head, int id)
+\begin{DoxyCompactList}\small\item\em Função para gravar os dados do grafo em ficheiro binário. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structAntena}{Antena}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{Funcoes_8h_abfb28f33e33946265b360122d298dcfa}{Ler\+Ficheiro\+Binario}} (char \texorpdfstring{$\ast$}{*}nome\+Ficheiro, int \texorpdfstring{$\ast$}{*}id, int \texorpdfstring{$\ast$}{*}val)
+\begin{DoxyCompactList}\small\item\em Função para ler a informação do Grafo contida num ficheiro binário. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{Funcoes_8h_a0a74669df35eaf5b7503010b70d21a88}{mostrar\+Lista}} (\mbox{\hyperlink{structAntena}{Antena}} \texorpdfstring{$\ast$}{*}head)
+\item 
+int \mbox{\hyperlink{Funcoes_8h_a86d9ea91e8ad19b3cda6baacf129718b}{mostrar\+Lista\+Arestas}} (\mbox{\hyperlink{structArestas}{Arestas}} \texorpdfstring{$\ast$}{*}head)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descrição detalhada}
+Ficheiro que cont{\ucr}m as assinaturas das fun{\ucr}{\ucr}es usadas em \doxylink{Funcoes_8c}{Funcoes.\+c}. 
+
+\begin{DoxyAuthor}{Autor}
+ptnunooliveira 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Data}
+May 2025 
+\end{DoxyDate}
+
+
+Definido no ficheiro \mbox{\hyperlink{Funcoes_8h_source}{Funcoes.\+h}}.
+
+
+
+\doxysubsection{Documentação das funções}
+\Hypertarget{Funcoes_8h_af4fdaa51c8b643413d79a70616e83e4e}\label{Funcoes_8h_af4fdaa51c8b643413d79a70616e83e4e} 
+\index{Funcoes.h@{Funcoes.h}!CalcularArestas@{CalcularArestas}}
+\index{CalcularArestas@{CalcularArestas}!Funcoes.h@{Funcoes.h}}
+\doxysubsubsection{\texorpdfstring{CalcularArestas()}{CalcularArestas()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structArestas}{Arestas}} \texorpdfstring{$\ast$}{*} Calcular\+Arestas (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structAntena}{Antena}} \texorpdfstring{$\ast$}{*}}]{antena\+Head,  }\item[{\mbox{\hyperlink{structArestas}{Arestas}} \texorpdfstring{$\ast$}{*}}]{arestas\+Head,  }\item[{int \texorpdfstring{$\ast$}{*}}]{val }\end{DoxyParamCaption})}
+
+
+
+Função para calcular as \doxylink{structArestas}{Arestas}. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em antena\+Head} & Apontador para o início da lista das Antenas. \\
+\hline
+{\em arestas\+Head} & Apontador para o início da lista das \doxylink{structArestas}{Arestas}. \\
+\hline
+{\em val} & Controlo de erros.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+Apontador para o início da lista das \doxylink{structArestas}{Arestas}. 
+\end{DoxyReturn}
+
+
+Definido na linha \mbox{\hyperlink{Funcoes_8c_source_l00333}{333}} do ficheiro \mbox{\hyperlink{Funcoes_8c_source}{Funcoes.\+c}}.
+
+Grafo de chamadas desta função\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=288pt]{Funcoes_8h_af4fdaa51c8b643413d79a70616e83e4e_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{Funcoes_8h_ad4af5efcb0c2442000fbd5474482ed3a}\label{Funcoes_8h_ad4af5efcb0c2442000fbd5474482ed3a} 
+\index{Funcoes.h@{Funcoes.h}!CriarAntena@{CriarAntena}}
+\index{CriarAntena@{CriarAntena}!Funcoes.h@{Funcoes.h}}
+\doxysubsubsection{\texorpdfstring{CriarAntena()}{CriarAntena()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structAntena}{Antena}} \texorpdfstring{$\ast$}{*} Criar\+Antena (\begin{DoxyParamCaption}\item[{int}]{linha,  }\item[{int}]{coluna,  }\item[{char}]{tipo\+Antena,  }\item[{int \texorpdfstring{$\ast$}{*}}]{id,  }\item[{int \texorpdfstring{$\ast$}{*}}]{val }\end{DoxyParamCaption})}
+
+
+
+Função para criar uma \doxylink{structAntena}{Antena}. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em linha} & Coordenada da linha da \doxylink{structAntena}{Antena}. \\
+\hline
+{\em coluna} & Coordenada da coluna da \doxylink{structAntena}{Antena}. \\
+\hline
+{\em tipo\+Antena} & Frequência da \doxylink{structAntena}{Antena}. \\
+\hline
+{\em id} & Número de identificação da \doxylink{structAntena}{Antena}. \\
+\hline
+{\em val} & Controlo de erros.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+Apontador para um tipo \doxylink{structAntena}{Antena}. 
+\end{DoxyReturn}
+
+
+Definido na linha \mbox{\hyperlink{Funcoes_8c_source_l00026}{26}} do ficheiro \mbox{\hyperlink{Funcoes_8c_source}{Funcoes.\+c}}.
+
+Este é o diagrama das funções que utilizam esta função\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=294pt]{Funcoes_8h_ad4af5efcb0c2442000fbd5474482ed3a_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{Funcoes_8h_a500e4d8d01f7969a164bfb3517cc3338}\label{Funcoes_8h_a500e4d8d01f7969a164bfb3517cc3338} 
+\index{Funcoes.h@{Funcoes.h}!CriarAresta@{CriarAresta}}
+\index{CriarAresta@{CriarAresta}!Funcoes.h@{Funcoes.h}}
+\doxysubsubsection{\texorpdfstring{CriarAresta()}{CriarAresta()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structArestas}{Arestas}} \texorpdfstring{$\ast$}{*} Criar\+Aresta (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structAntena}{Antena}} \texorpdfstring{$\ast$}{*}}]{origem,  }\item[{int}]{destino\+ID,  }\item[{int}]{distancia,  }\item[{int \texorpdfstring{$\ast$}{*}}]{val }\end{DoxyParamCaption})}
+
+
+
+Função para criar uma Aresta. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em origem} & Apontador para a origem da aresta. \\
+\hline
+{\em destino\+ID} & Numero de identificação da antena destino. \\
+\hline
+{\em distancia} & Peso da Aresta. \\
+\hline
+{\em val} & Controlo de erros.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+Apontador para um tipo Aresta.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parâmetros}
+{\em origem} & Apontador para a origem da aresta. \\
+\hline
+{\em destino\+ID} & Número de identificação da antena destino. \\
+\hline
+{\em distancia} & Peso da Aresta. \\
+\hline
+{\em val} & Controlo de erros.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+Apontador para um tipo Aresta. 
+\end{DoxyReturn}
+
+
+Definido na linha \mbox{\hyperlink{Funcoes_8c_source_l00131}{131}} do ficheiro \mbox{\hyperlink{Funcoes_8c_source}{Funcoes.\+c}}.
+
+Este é o diagrama das funções que utilizam esta função\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=291pt]{Funcoes_8h_a500e4d8d01f7969a164bfb3517cc3338_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{Funcoes_8h_ae1bebfa8e5dbb1056c0573a99a5df8f5}\label{Funcoes_8h_ae1bebfa8e5dbb1056c0573a99a5df8f5} 
+\index{Funcoes.h@{Funcoes.h}!GravarFicheiro@{GravarFicheiro}}
+\index{GravarFicheiro@{GravarFicheiro}!Funcoes.h@{Funcoes.h}}
+\doxysubsubsection{\texorpdfstring{GravarFicheiro()}{GravarFicheiro()}}
+{\footnotesize\ttfamily int Gravar\+Ficheiro (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{nome\+Ficheiro,  }\item[{\mbox{\hyperlink{structAntena}{Antena}} \texorpdfstring{$\ast$}{*}}]{antena\+Head }\end{DoxyParamCaption})}
+
+
+
+Função que permite gravar apenas a posição das Antenas num ficheiro não binário. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em nome\+Ficheiro} & Nome do ficheiro onde se pretende guardar a posição das Antenas. \\
+\hline
+{\em antena\+Head} & Apontador para o início da lista das Antenas.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+0 em caso de sucesso 
+\end{DoxyReturn}
+
+
+Definido na linha \mbox{\hyperlink{Funcoes_8c_source_l00600}{600}} do ficheiro \mbox{\hyperlink{Funcoes_8c_source}{Funcoes.\+c}}.
+
+\Hypertarget{Funcoes_8h_a66fd200f181fa474c82922e30f81b1a4}\label{Funcoes_8h_a66fd200f181fa474c82922e30f81b1a4} 
+\index{Funcoes.h@{Funcoes.h}!GravarFicheiroBinario@{GravarFicheiroBinario}}
+\index{GravarFicheiroBinario@{GravarFicheiroBinario}!Funcoes.h@{Funcoes.h}}
+\doxysubsubsection{\texorpdfstring{GravarFicheiroBinario()}{GravarFicheiroBinario()}}
+{\footnotesize\ttfamily int Gravar\+Ficheiro\+Binario (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{nome\+Ficheiro,  }\item[{\mbox{\hyperlink{structAntena}{Antena}} \texorpdfstring{$\ast$}{*}}]{antena\+Head,  }\item[{int}]{id }\end{DoxyParamCaption})}
+
+
+
+Função para gravar os dados do grafo em ficheiro binário. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em nome\+Ficheiro} & Nome do ficheiro onde se pretende guarda a informação do grafo. \\
+\hline
+{\em antena\+Head} & Apontador para o início do grafo. \\
+\hline
+{\em id} & Variável que contém quantas Antenas o grafo tem.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+0 em caso de sucesso. 
+\end{DoxyReturn}
+
+
+Definido na linha \mbox{\hyperlink{Funcoes_8c_source_l00661}{661}} do ficheiro \mbox{\hyperlink{Funcoes_8c_source}{Funcoes.\+c}}.
+
+\Hypertarget{Funcoes_8h_a467dabf8a49fd4d8bc39021e9434c88c}\label{Funcoes_8h_a467dabf8a49fd4d8bc39021e9434c88c} 
+\index{Funcoes.h@{Funcoes.h}!InserirAntena@{InserirAntena}}
+\index{InserirAntena@{InserirAntena}!Funcoes.h@{Funcoes.h}}
+\doxysubsubsection{\texorpdfstring{InserirAntena()}{InserirAntena()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structAntena}{Antena}} \texorpdfstring{$\ast$}{*} Inserir\+Antena (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structAntena}{Antena}} \texorpdfstring{$\ast$}{*}}]{head,  }\item[{\mbox{\hyperlink{structAntena}{Antena}} \texorpdfstring{$\ast$}{*}}]{nova,  }\item[{int \texorpdfstring{$\ast$}{*}}]{val }\end{DoxyParamCaption})}
+
+
+
+Função para inserir uma \doxylink{structAntena}{Antena} na respetiva lista. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em head} & Apontador do início da lista. \\
+\hline
+{\em nova} & \doxylink{structAntena}{Antena} que deseja-\/se inserir. \\
+\hline
+{\em val} & Controlo de erros.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+Apontador do início da lista. 
+\end{DoxyReturn}
+
+
+Definido na linha \mbox{\hyperlink{Funcoes_8c_source_l00062}{62}} do ficheiro \mbox{\hyperlink{Funcoes_8c_source}{Funcoes.\+c}}.
+
+Este é o diagrama das funções que utilizam esta função\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=302pt]{Funcoes_8h_a467dabf8a49fd4d8bc39021e9434c88c_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{Funcoes_8h_a3ac73fe468fdc3985b2bfd484b27fbc7}\label{Funcoes_8h_a3ac73fe468fdc3985b2bfd484b27fbc7} 
+\index{Funcoes.h@{Funcoes.h}!InserirAresta@{InserirAresta}}
+\index{InserirAresta@{InserirAresta}!Funcoes.h@{Funcoes.h}}
+\doxysubsubsection{\texorpdfstring{InserirAresta()}{InserirAresta()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structArestas}{Arestas}} \texorpdfstring{$\ast$}{*} Inserir\+Aresta (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structArestas}{Arestas}} \texorpdfstring{$\ast$}{*}}]{head,  }\item[{\mbox{\hyperlink{structArestas}{Arestas}} \texorpdfstring{$\ast$}{*}}]{nova,  }\item[{int \texorpdfstring{$\ast$}{*}}]{val }\end{DoxyParamCaption})}
+
+
+
+Função para inserir uma Aresta na respetiva lista. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em head} & Apontador para o início da respetiva lista. \\
+\hline
+{\em nova} & Apontador para a Aresta a inserir na lista. \\
+\hline
+{\em val} & Controlo de erros.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+Apontador para o início da lista. 
+\end{DoxyReturn}
+
+
+Definido na linha \mbox{\hyperlink{Funcoes_8c_source_l00163}{163}} do ficheiro \mbox{\hyperlink{Funcoes_8c_source}{Funcoes.\+c}}.
+
+Este é o diagrama das funções que utilizam esta função\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=288pt]{Funcoes_8h_a3ac73fe468fdc3985b2bfd484b27fbc7_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{Funcoes_8h_a7cc58d72f39536ab43bafee7e5b5512b}\label{Funcoes_8h_a7cc58d72f39536ab43bafee7e5b5512b} 
+\index{Funcoes.h@{Funcoes.h}!LerFicheiro@{LerFicheiro}}
+\index{LerFicheiro@{LerFicheiro}!Funcoes.h@{Funcoes.h}}
+\doxysubsubsection{\texorpdfstring{LerFicheiro()}{LerFicheiro()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structAntena}{Antena}} \texorpdfstring{$\ast$}{*} Ler\+Ficheiro (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{nome\+Ficheiro,  }\item[{\mbox{\hyperlink{structAntena}{Antena}} \texorpdfstring{$\ast$}{*}}]{antena\+Head,  }\item[{int \texorpdfstring{$\ast$}{*}}]{id,  }\item[{int \texorpdfstring{$\ast$}{*}}]{val }\end{DoxyParamCaption})}
+
+
+
+Função para ler dados a partir de um ficheiro não binário. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em nome\+Ficheiro} & Nome do ficheiro a ser lido. \\
+\hline
+{\em antena\+Head} & Apontador para o início da lista das Antenas. \\
+\hline
+{\em id} & Apontador para a variável de identificação das Antenas. \\
+\hline
+{\em val} & Controlo de erros.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+Apontador para o início da lista de Antenas. 
+\end{DoxyReturn}
+
+
+Definido na linha \mbox{\hyperlink{Funcoes_8c_source_l00555}{555}} do ficheiro \mbox{\hyperlink{Funcoes_8c_source}{Funcoes.\+c}}.
+
+Grafo de chamadas desta função\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=268pt]{Funcoes_8h_a7cc58d72f39536ab43bafee7e5b5512b_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{Funcoes_8h_abfb28f33e33946265b360122d298dcfa}\label{Funcoes_8h_abfb28f33e33946265b360122d298dcfa} 
+\index{Funcoes.h@{Funcoes.h}!LerFicheiroBinario@{LerFicheiroBinario}}
+\index{LerFicheiroBinario@{LerFicheiroBinario}!Funcoes.h@{Funcoes.h}}
+\doxysubsubsection{\texorpdfstring{LerFicheiroBinario()}{LerFicheiroBinario()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structAntena}{Antena}} \texorpdfstring{$\ast$}{*} Ler\+Ficheiro\+Binario (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{nome\+Ficheiro,  }\item[{int \texorpdfstring{$\ast$}{*}}]{id,  }\item[{int \texorpdfstring{$\ast$}{*}}]{val }\end{DoxyParamCaption})}
+
+
+
+Função para ler a informação do Grafo contida num ficheiro binário. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em nome\+Ficheiro} & Nome do ficheiro que contem a informação do grafo. \\
+\hline
+{\em id} & Apontador para a variável que contem a identificação da \doxylink{structAntena}{Antena}. \\
+\hline
+{\em val} & Controlo de erros.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+Apontador para o início do grafo. 
+\end{DoxyReturn}
+
+
+Definido na linha \mbox{\hyperlink{Funcoes_8c_source_l00727}{727}} do ficheiro \mbox{\hyperlink{Funcoes_8c_source}{Funcoes.\+c}}.
+
+Grafo de chamadas desta função\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Funcoes_8h_abfb28f33e33946265b360122d298dcfa_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{Funcoes_8h_afb5114ede97ca32d3de49fbf335748f2}\label{Funcoes_8h_afb5114ede97ca32d3de49fbf335748f2} 
+\index{Funcoes.h@{Funcoes.h}!LigarAntenaDestinoAntenaId@{LigarAntenaDestinoAntenaId}}
+\index{LigarAntenaDestinoAntenaId@{LigarAntenaDestinoAntenaId}!Funcoes.h@{Funcoes.h}}
+\doxysubsubsection{\texorpdfstring{LigarAntenaDestinoAntenaId()}{LigarAntenaDestinoAntenaId()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structAntena}{Antena}} \texorpdfstring{$\ast$}{*} Ligar\+Antena\+Destino\+Antena\+Id (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structAntena}{Antena}} \texorpdfstring{$\ast$}{*}}]{antena\+Head,  }\item[{int \texorpdfstring{$\ast$}{*}}]{val }\end{DoxyParamCaption})}
+
+
+
+Função que liga a variável id ao destino da Aresta. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em antena\+Head} & Apontador para o início da lista das Antenas. \\
+\hline
+{\em val} & Controlo de erros.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+Apontador para o início da lista das Antenas 
+\end{DoxyReturn}
+
+
+Definido na linha \mbox{\hyperlink{Funcoes_8c_source_l00390}{390}} do ficheiro \mbox{\hyperlink{Funcoes_8c_source}{Funcoes.\+c}}.
+
+Este é o diagrama das funções que utilizam esta função\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Funcoes_8h_afb5114ede97ca32d3de49fbf335748f2_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{Funcoes_8h_ad4ebad78f96b698698e900d209ed0092}\label{Funcoes_8h_ad4ebad78f96b698698e900d209ed0092} 
+\index{Funcoes.h@{Funcoes.h}!LigarAntenasArestas@{LigarAntenasArestas}}
+\index{LigarAntenasArestas@{LigarAntenasArestas}!Funcoes.h@{Funcoes.h}}
+\doxysubsubsection{\texorpdfstring{LigarAntenasArestas()}{LigarAntenasArestas()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structAntena}{Antena}} \texorpdfstring{$\ast$}{*} Ligar\+Antenas\+Arestas (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structAntena}{Antena}} \texorpdfstring{$\ast$}{*}}]{antena\+Head,  }\item[{\mbox{\hyperlink{structArestas}{Arestas}} \texorpdfstring{$\ast$}{*}}]{arestas\+Head,  }\item[{int \texorpdfstring{$\ast$}{*}}]{val }\end{DoxyParamCaption})}
+
+
+
+Função para ligar as \doxylink{structArestas}{Arestas} às respetivas Antenas de origem. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em antena\+Head} & Apontador para o início da lista das Antenas. \\
+\hline
+{\em arestas\+Head} & Apontador para o início da lista das \doxylink{structArestas}{Arestas}. \\
+\hline
+{\em val} & Controlo de erros.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+Apontador para o início da lista das Antenas. 
+\end{DoxyReturn}
+
+
+Definido na linha \mbox{\hyperlink{Funcoes_8c_source_l00256}{256}} do ficheiro \mbox{\hyperlink{Funcoes_8c_source}{Funcoes.\+c}}.
+
+Grafo de chamadas desta função\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Funcoes_8h_ad4ebad78f96b698698e900d209ed0092_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{Funcoes_8h_a0a74669df35eaf5b7503010b70d21a88}\label{Funcoes_8h_a0a74669df35eaf5b7503010b70d21a88} 
+\index{Funcoes.h@{Funcoes.h}!mostrarLista@{mostrarLista}}
+\index{mostrarLista@{mostrarLista}!Funcoes.h@{Funcoes.h}}
+\doxysubsubsection{\texorpdfstring{mostrarLista()}{mostrarLista()}}
+{\footnotesize\ttfamily int mostrar\+Lista (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structAntena}{Antena}} \texorpdfstring{$\ast$}{*}}]{head }\end{DoxyParamCaption})}
+
+
+
+Definido na linha \mbox{\hyperlink{Funcoes_8c_source_l00821}{821}} do ficheiro \mbox{\hyperlink{Funcoes_8c_source}{Funcoes.\+c}}.
+
+\Hypertarget{Funcoes_8h_a86d9ea91e8ad19b3cda6baacf129718b}\label{Funcoes_8h_a86d9ea91e8ad19b3cda6baacf129718b} 
+\index{Funcoes.h@{Funcoes.h}!mostrarListaArestas@{mostrarListaArestas}}
+\index{mostrarListaArestas@{mostrarListaArestas}!Funcoes.h@{Funcoes.h}}
+\doxysubsubsection{\texorpdfstring{mostrarListaArestas()}{mostrarListaArestas()}}
+{\footnotesize\ttfamily int mostrar\+Lista\+Arestas (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structArestas}{Arestas}} \texorpdfstring{$\ast$}{*}}]{head }\end{DoxyParamCaption})}
+
+
+
+Definido na linha \mbox{\hyperlink{Funcoes_8c_source_l00838}{838}} do ficheiro \mbox{\hyperlink{Funcoes_8c_source}{Funcoes.\+c}}.
+
+\Hypertarget{Funcoes_8h_a111dfbf7ea252c28e95f431c20cfc22a}\label{Funcoes_8h_a111dfbf7ea252c28e95f431c20cfc22a} 
+\index{Funcoes.h@{Funcoes.h}!RemoverAntena@{RemoverAntena}}
+\index{RemoverAntena@{RemoverAntena}!Funcoes.h@{Funcoes.h}}
+\doxysubsubsection{\texorpdfstring{RemoverAntena()}{RemoverAntena()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structAntena}{Antena}} \texorpdfstring{$\ast$}{*} Remover\+Antena (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structAntena}{Antena}} \texorpdfstring{$\ast$}{*}}]{antena\+Head,  }\item[{int}]{antena\+ID,  }\item[{int \texorpdfstring{$\ast$}{*}}]{val }\end{DoxyParamCaption})}
+
+
+
+Função para Remover uma \doxylink{structAntena}{Antena} e as respetivas \doxylink{structArestas}{Arestas} do grafo. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em antena\+Head} & Apontador para o início do grafo. \\
+\hline
+{\em antenaid} & Identificador da \doxylink{structAntena}{Antena} a ser removida. \\
+\hline
+{\em val} & Controlo de erros.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+Apontador para o início do grafo atualizado.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parâmetros}
+{\em antena\+Head} & Apontador para o início do grafo. \\
+\hline
+{\em antena\+ID} & Identificador da \doxylink{structAntena}{Antena} a ser removida. \\
+\hline
+{\em val} & Controlo de erros.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+Apontador para o início do grafo atualizado. 
+\end{DoxyReturn}
+
+
+Definido na linha \mbox{\hyperlink{Funcoes_8c_source_l00439}{439}} do ficheiro \mbox{\hyperlink{Funcoes_8c_source}{Funcoes.\+c}}.
+

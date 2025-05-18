@@ -1,0 +1,38 @@
+\doxysection{Grafos.\+h}
+\hypertarget{_grafos_8h_source}{}\label{_grafos_8h_source}\mbox{\hyperlink{_grafos_8h}{Ir para a documentação deste ficheiro.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_grafos_8h_source_l00001}00001\ \textcolor{comment}{/*****************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_grafos_8h_source_l00009}00009\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{\Hypertarget{_grafos_8h_source_l00010}00010\ }
+\DoxyCodeLine{\Hypertarget{_grafos_8h_source_l00011}\mbox{\hyperlink{struct_antena}{00011}}\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_antena}{Antena}}\ \{}
+\DoxyCodeLine{\Hypertarget{_grafos_8h_source_l00012}00012\ \ \ \ \ \textcolor{keywordtype}{int}\ id;}
+\DoxyCodeLine{\Hypertarget{_grafos_8h_source_l00013}00013\ \ \ \ \ \textcolor{keywordtype}{int}\ linha;}
+\DoxyCodeLine{\Hypertarget{_grafos_8h_source_l00014}00014\ \ \ \ \ \textcolor{keywordtype}{int}\ coluna;}
+\DoxyCodeLine{\Hypertarget{_grafos_8h_source_l00015}00015\ \ \ \ \ \textcolor{keywordtype}{char}\ tipoAntena;\ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_grafos_8h_source_l00016}00016\ \ \ \ \ \textcolor{keywordtype}{int}\ visitado;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Se\ foi\ visitado}}
+\DoxyCodeLine{\Hypertarget{_grafos_8h_source_l00017}00017\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_antena}{Antena}}*\ proxAntena;\ \ \ \ \ \ \ \ \textcolor{comment}{//\ Lista\ de\ Antenas}}
+\DoxyCodeLine{\Hypertarget{_grafos_8h_source_l00018}00018\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_arestas}{Arestas}}*\ arestas;\ \ \ \ \ \textcolor{comment}{//\ Lista\ das\ Arestas\ daquela\ Antena}}
+\DoxyCodeLine{\Hypertarget{_grafos_8h_source_l00019}00019\ \}\ \mbox{\hyperlink{struct_antena}{Antena}};}
+\DoxyCodeLine{\Hypertarget{_grafos_8h_source_l00020}00020\ }
+\DoxyCodeLine{\Hypertarget{_grafos_8h_source_l00021}\mbox{\hyperlink{struct_arestas}{00021}}\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_arestas}{Arestas}}\ \{}
+\DoxyCodeLine{\Hypertarget{_grafos_8h_source_l00022}00022\ \ \ \ \ \textcolor{keywordtype}{int}\ distancia;}
+\DoxyCodeLine{\Hypertarget{_grafos_8h_source_l00023}00023\ \ \ \ \ \textcolor{keywordtype}{int}\ destinoID;}
+\DoxyCodeLine{\Hypertarget{_grafos_8h_source_l00024}00024\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_antena}{Antena}}*\ origem;\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Antena\ origem\ da\ Aresta}}
+\DoxyCodeLine{\Hypertarget{_grafos_8h_source_l00025}00025\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_antena}{Antena}}*\ destino;\ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Antena\ destino\ da\ Aresta}}
+\DoxyCodeLine{\Hypertarget{_grafos_8h_source_l00026}00026\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_arestas}{Arestas}}*\ proxAresta;\ \ \ \ \ \ \textcolor{comment}{//\ Lista\ de\ Arestas}}
+\DoxyCodeLine{\Hypertarget{_grafos_8h_source_l00027}00027\ \}\ \mbox{\hyperlink{struct_arestas}{Arestas}};}
+\DoxyCodeLine{\Hypertarget{_grafos_8h_source_l00028}00028\ }
+\DoxyCodeLine{\Hypertarget{_grafos_8h_source_l00029}\mbox{\hyperlink{struct_antena_file}{00029}}\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_antena_file}{AntenaFile}}\ \{}
+\DoxyCodeLine{\Hypertarget{_grafos_8h_source_l00030}00030\ \ \ \ \ \textcolor{keywordtype}{int}\ id;}
+\DoxyCodeLine{\Hypertarget{_grafos_8h_source_l00031}00031\ \ \ \ \ \textcolor{keywordtype}{int}\ linha;}
+\DoxyCodeLine{\Hypertarget{_grafos_8h_source_l00032}00032\ \ \ \ \ \textcolor{keywordtype}{int}\ coluna;}
+\DoxyCodeLine{\Hypertarget{_grafos_8h_source_l00033}00033\ \ \ \ \ \textcolor{keywordtype}{char}\ tipoAntena;}
+\DoxyCodeLine{\Hypertarget{_grafos_8h_source_l00034}00034\ \ \ \ \ \textcolor{keywordtype}{int}\ visitado;}
+\DoxyCodeLine{\Hypertarget{_grafos_8h_source_l00035}00035\ \}\ \mbox{\hyperlink{struct_antena_file}{AntenaFile}};}
+\DoxyCodeLine{\Hypertarget{_grafos_8h_source_l00036}00036\ }
+\DoxyCodeLine{\Hypertarget{_grafos_8h_source_l00037}\mbox{\hyperlink{struct_arestas_file}{00037}}\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_arestas_file}{ArestasFile}}\ \{}
+\DoxyCodeLine{\Hypertarget{_grafos_8h_source_l00038}00038\ \ \ \ \ \textcolor{keywordtype}{int}\ distancia;}
+\DoxyCodeLine{\Hypertarget{_grafos_8h_source_l00039}00039\ \ \ \ \ \textcolor{keywordtype}{int}\ destinoID;}
+\DoxyCodeLine{\Hypertarget{_grafos_8h_source_l00040}00040\ \}\ \mbox{\hyperlink{struct_arestas_file}{ArestasFile}};}
+
+\end{DoxyCode}

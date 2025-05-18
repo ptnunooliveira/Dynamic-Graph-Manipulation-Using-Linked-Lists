@@ -1,0 +1,16 @@
+<map id="Buscas.h" name="Buscas.h">
+<area shape="rect" id="Node000001" title="Ficheiro que contém as assinaturas usadas em Buscas.c." alt="" coords="193,5,273,31"/>
+<area shape="rect" id="Node000002" href="$Funcoes_8h.html" title="Ficheiro que cont�m as assinaturas das fun��es usadas em Funcoes.c." alt="" coords="190,79,277,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="229,31,227,65,222,65,224,31"/>
+<area shape="poly" id="edge7_Node000002_Node000001" title=" " alt="" coords="238,78,239,44,245,45,243,79"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,152,72,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="203,107,84,150,82,145,201,102"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="97,152,167,177"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="219,106,161,146,158,142,216,102"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="192,152,275,177"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="236,104,236,138,231,138,231,104"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="299,152,378,177"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="252,102,312,142,309,147,249,106"/>
+<area shape="rect" id="Node000007" href="$Grafos_8h.html" title="Ficheiro que contem as structs usadas." alt="" coords="403,152,480,177"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="268,101,395,145,394,150,266,107"/>
+</map>

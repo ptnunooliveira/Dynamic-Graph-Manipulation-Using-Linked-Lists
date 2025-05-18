@@ -1,0 +1,7 @@
+<map id="CriarAresta" name="CriarAresta">
+<area shape="rect" id="Node000001" title="Função para criar uma Aresta." alt="" coords="192,31,287,56"/>
+<area shape="rect" id="Node000002" href="$Funcoes_8c.html#af4fdaa51c8b643413d79a70616e83e4e" title="Função para calcular as Arestas." alt="" coords="13,5,137,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="178,37,137,30,137,25,178,31"/>
+<area shape="rect" id="Node000003" href="$Funcoes_8c.html#abfb28f33e33946265b360122d298dcfa" title="Função para ler a informação do Grafo contida num ficheiro binário." alt="" coords="5,55,144,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="179,55,145,60,144,55,178,50"/>
+</map>

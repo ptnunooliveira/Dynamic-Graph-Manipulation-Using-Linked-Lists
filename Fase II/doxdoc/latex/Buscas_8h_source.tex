@@ -1,0 +1,39 @@
+\doxysection{Buscas.\+h}
+\hypertarget{Buscas_8h_source}{}\label{Buscas_8h_source}\mbox{\hyperlink{Buscas_8h}{Ir para a documentação deste ficheiro.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{Buscas_8h_source_l00001}00001\ \textcolor{comment}{/*****************************************************************/}}
+\DoxyCodeLine{\Hypertarget{Buscas_8h_source_l00009}00009\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{\Hypertarget{Buscas_8h_source_l00010}00010\ }
+\DoxyCodeLine{\Hypertarget{Buscas_8h_source_l00011}00011\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{Funcoes_8h}{Funcoes.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{Buscas_8h_source_l00012}00012\ }
+\DoxyCodeLine{\Hypertarget{Buscas_8h_source_l00013}00013\ \textcolor{comment}{/*}}
+\DoxyCodeLine{\Hypertarget{Buscas_8h_source_l00014}00014\ \textcolor{comment}{\#pragma\ region\ STACK}}
+\DoxyCodeLine{\Hypertarget{Buscas_8h_source_l00015}00015\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{Buscas_8h_source_l00016}00016\ \textcolor{comment}{int\ PushStack(int\ stack[],\ int\ antenaID,\ int*\ idAtual);}}
+\DoxyCodeLine{\Hypertarget{Buscas_8h_source_l00017}00017\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{Buscas_8h_source_l00018}00018\ \textcolor{comment}{int\ RemoveStack(int\ stack[],\ int*\ top);}}
+\DoxyCodeLine{\Hypertarget{Buscas_8h_source_l00019}00019\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{Buscas_8h_source_l00020}00020\ \textcolor{comment}{int\ VerTopoStack(int\ stack[],\ int*\ top);}}
+\DoxyCodeLine{\Hypertarget{Buscas_8h_source_l00021}00021\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{Buscas_8h_source_l00022}00022\ \textcolor{comment}{bool\ VerificarStackVazia(int\ stack[],\ int\ top);}}
+\DoxyCodeLine{\Hypertarget{Buscas_8h_source_l00023}00023\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{Buscas_8h_source_l00024}00024\ \textcolor{comment}{\#pragma\ endregion}}
+\DoxyCodeLine{\Hypertarget{Buscas_8h_source_l00025}00025\ \textcolor{comment}{*/}}
+\DoxyCodeLine{\Hypertarget{Buscas_8h_source_l00026}00026\ }
+\DoxyCodeLine{\Hypertarget{Buscas_8h_source_l00027}00027\ \textcolor{preprocessor}{\#pragma\ region\ ALGORITMOS\ DFT\ \&\ BFT}}
+\DoxyCodeLine{\Hypertarget{Buscas_8h_source_l00028}00028\ }
+\DoxyCodeLine{\Hypertarget{Buscas_8h_source_l00037}00037\ \mbox{\hyperlink{structAntena}{Antena}}*\ \mbox{\hyperlink{Buscas_8h_a4179c7165513871db7c6e0685f9c6284}{ProcurarAntenaPeloID}}(\mbox{\hyperlink{structAntena}{Antena}}*\ antenaHead,\ \textcolor{keywordtype}{int}\ antenaID);}
+\DoxyCodeLine{\Hypertarget{Buscas_8h_source_l00038}00038\ }
+\DoxyCodeLine{\Hypertarget{Buscas_8h_source_l00047}00047\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{Buscas_8h_a741b075f0fd46e25493f9b6bbdccaaba}{DepthFirstTraversal}}(\mbox{\hyperlink{structAntena}{Antena}}*\ antenaHead,\ \textcolor{keywordtype}{int}\ antenaID);}
+\DoxyCodeLine{\Hypertarget{Buscas_8h_source_l00048}00048\ }
+\DoxyCodeLine{\Hypertarget{Buscas_8h_source_l00057}00057\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{Buscas_8h_a1301bf0da0eb3b63cab15d7daf28b929}{BreadthFirstTraversal}}(\mbox{\hyperlink{structAntena}{Antena}}*\ antenaHead,\ \textcolor{keywordtype}{int}\ antenaID);}
+\DoxyCodeLine{\Hypertarget{Buscas_8h_source_l00058}00058\ }
+\DoxyCodeLine{\Hypertarget{Buscas_8h_source_l00066}00066\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{Buscas_8h_a4a169798f591e840cfb6413956e30a25}{ResetarVisitados}}(\mbox{\hyperlink{structAntena}{Antena}}*\ antenaHead);}
+\DoxyCodeLine{\Hypertarget{Buscas_8h_source_l00067}00067\ }
+\DoxyCodeLine{\Hypertarget{Buscas_8h_source_l00076}00076\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{Buscas_8h_a8ebddda2454b08b12e7c00f68e512164}{NumeroAntenasMesmaFrequencia}}(\mbox{\hyperlink{structAntena}{Antena}}*\ antenaHead,\ \mbox{\hyperlink{structAntena}{Antena}}*\ atual);}
+\DoxyCodeLine{\Hypertarget{Buscas_8h_source_l00077}00077\ }
+\DoxyCodeLine{\Hypertarget{Buscas_8h_source_l00088}00088\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{Buscas_8h_aae70492309c8bc445d513b41d94c87b3}{TodosCaminhosPossiveis}}(\mbox{\hyperlink{structAntena}{Antena}}*\ antenaHead,\ \textcolor{keywordtype}{int}\ origemID,\ \textcolor{keywordtype}{int}\ destinoID,\ \textcolor{keywordtype}{int}\ distanciaPercorrida);}
+\DoxyCodeLine{\Hypertarget{Buscas_8h_source_l00089}00089\ }
+\DoxyCodeLine{\Hypertarget{Buscas_8h_source_l00090}00090\ \textcolor{preprocessor}{\#pragma\ endregion}}
+
+\end{DoxyCode}

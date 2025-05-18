@@ -1,0 +1,7 @@
+<map id="LerFicheiro" name="LerFicheiro">
+<area shape="rect" id="Node000001" title="Função para ler dados a partir de um ficheiro não binário." alt="" coords="5,31,99,56"/>
+<area shape="rect" id="Node000002" href="$Funcoes_8c.html#ad4af5efcb0c2442000fbd5474482ed3a" title="Função para criar uma Antena." alt="" coords="152,5,251,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="98,33,138,26,139,31,99,38"/>
+<area shape="rect" id="Node000003" href="$Funcoes_8c.html#a467dabf8a49fd4d8bc39021e9434c88c" title="Função para inserir uma Antena na respetiva lista." alt="" coords="147,55,256,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="99,48,133,54,132,59,99,53"/>
+</map>

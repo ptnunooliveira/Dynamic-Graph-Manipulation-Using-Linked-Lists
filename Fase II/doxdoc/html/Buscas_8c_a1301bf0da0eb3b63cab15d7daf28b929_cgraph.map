@@ -1,0 +1,7 @@
+<map id="BreadthFirstTraversal" name="BreadthFirstTraversal">
+<area shape="rect" id="Node000001" title="Função não recursiva que faz a travessia na largura." alt="" coords="5,31,165,56"/>
+<area shape="rect" id="Node000002" href="$Buscas_8c.html#a8ebddda2454b08b12e7c00f68e512164" title="Função para saber quantas Antenas existem com a mesma frequência." alt="" coords="213,5,460,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="165,33,200,29,200,34,166,38"/>
+<area shape="rect" id="Node000003" href="$Buscas_8c.html#a4179c7165513871db7c6e0685f9c6284" title="Função que procura o apontador para a Antena a partir do id fornecido por parâmetro." alt="" coords="255,55,419,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="166,48,242,56,241,61,165,54"/>
+</map>

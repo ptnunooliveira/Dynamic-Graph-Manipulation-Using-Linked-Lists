@@ -1,0 +1,139 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Manipulação de Grafos Dinâmicos com Listas Ligadas: Código-Fonte de Buscas.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Manipulação de Grafos Dinâmicos com Listas Ligadas
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="doc-content">
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Buscas.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_buscas_8h.html">Ir para a documentação deste ficheiro.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/*****************************************************************/</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &quot;<a class="code" href="_funcoes_8h.html">Funcoes.h</a>&quot;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment">#pragma region STACK</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment"></span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment">int PushStack(int stack[], int antenaID, int* idAtual);</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment"></span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment">int RemoveStack(int stack[], int* top);</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment"></span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment">int VerTopoStack(int stack[], int* top);</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment"></span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment">bool VerificarStackVazia(int stack[], int top);</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment"></span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment">#pragma endregion</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment">*/</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="preprocessor">#pragma region ALGORITMOS DFT &amp; BFT</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><a class="code hl_struct" href="struct_antena.html">Antena</a>* <a class="code hl_function" href="_buscas_8h.html#a4179c7165513871db7c6e0685f9c6284">ProcurarAntenaPeloID</a>(<a class="code hl_struct" href="struct_antena.html">Antena</a>* antenaHead, <span class="keywordtype">int</span> antenaID);</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="keywordtype">int</span> <a class="code hl_function" href="_buscas_8h.html#a741b075f0fd46e25493f9b6bbdccaaba">DepthFirstTraversal</a>(<a class="code hl_struct" href="struct_antena.html">Antena</a>* antenaHead, <span class="keywordtype">int</span> antenaID);</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="keywordtype">int</span> <a class="code hl_function" href="_buscas_8h.html#a1301bf0da0eb3b63cab15d7daf28b929">BreadthFirstTraversal</a>(<a class="code hl_struct" href="struct_antena.html">Antena</a>* antenaHead, <span class="keywordtype">int</span> antenaID);</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="keywordtype">bool</span> <a class="code hl_function" href="_buscas_8h.html#a4a169798f591e840cfb6413956e30a25">ResetarVisitados</a>(<a class="code hl_struct" href="struct_antena.html">Antena</a>* antenaHead);</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span><span class="keywordtype">int</span> <a class="code hl_function" href="_buscas_8h.html#a8ebddda2454b08b12e7c00f68e512164">NumeroAntenasMesmaFrequencia</a>(<a class="code hl_struct" href="struct_antena.html">Antena</a>* antenaHead, <a class="code hl_struct" href="struct_antena.html">Antena</a>* atual);</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span><span class="keywordtype">int</span> <a class="code hl_function" href="_buscas_8h.html#aae70492309c8bc445d513b41d94c87b3">TodosCaminhosPossiveis</a>(<a class="code hl_struct" href="struct_antena.html">Antena</a>* antenaHead, <span class="keywordtype">int</span> origemID, <span class="keywordtype">int</span> destinoID, <span class="keywordtype">int</span> distanciaPercorrida);</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span><span class="preprocessor">#pragma endregion</span></div>
+<div class="ttc" id="a_buscas_8h_html_a1301bf0da0eb3b63cab15d7daf28b929"><div class="ttname"><a href="_buscas_8h.html#a1301bf0da0eb3b63cab15d7daf28b929">BreadthFirstTraversal</a></div><div class="ttdeci">int BreadthFirstTraversal(Antena *antenaHead, int antenaID)</div><div class="ttdoc">Função não recursiva que faz a travessia na largura.</div><div class="ttdef"><b>Definição</b> <a href="_buscas_8c_source.html#l00170">Buscas.c:170</a></div></div>
+<div class="ttc" id="a_buscas_8h_html_a4179c7165513871db7c6e0685f9c6284"><div class="ttname"><a href="_buscas_8h.html#a4179c7165513871db7c6e0685f9c6284">ProcurarAntenaPeloID</a></div><div class="ttdeci">Antena * ProcurarAntenaPeloID(Antena *antenaHead, int antenaID)</div><div class="ttdoc">Função que procura o apontador para a Antena a partir do id fornecido por parâmetro.</div><div class="ttdef"><b>Definição</b> <a href="_buscas_8c_source.html#l00061">Buscas.c:61</a></div></div>
+<div class="ttc" id="a_buscas_8h_html_a4a169798f591e840cfb6413956e30a25"><div class="ttname"><a href="_buscas_8h.html#a4a169798f591e840cfb6413956e30a25">ResetarVisitados</a></div><div class="ttdeci">bool ResetarVisitados(Antena *antenaHead)</div><div class="ttdoc">Função para resetar o campo &quot;visitado&quot; da struct Antena.</div><div class="ttdef"><b>Definição</b> <a href="_buscas_8c_source.html#l00087">Buscas.c:87</a></div></div>
+<div class="ttc" id="a_buscas_8h_html_a741b075f0fd46e25493f9b6bbdccaaba"><div class="ttname"><a href="_buscas_8h.html#a741b075f0fd46e25493f9b6bbdccaaba">DepthFirstTraversal</a></div><div class="ttdeci">int DepthFirstTraversal(Antena *antenaHead, int antenaID)</div><div class="ttdoc">Função recursiva que faz a travessia na profundidade.</div><div class="ttdef"><b>Definição</b> <a href="_buscas_8c_source.html#l00137">Buscas.c:137</a></div></div>
+<div class="ttc" id="a_buscas_8h_html_a8ebddda2454b08b12e7c00f68e512164"><div class="ttname"><a href="_buscas_8h.html#a8ebddda2454b08b12e7c00f68e512164">NumeroAntenasMesmaFrequencia</a></div><div class="ttdeci">int NumeroAntenasMesmaFrequencia(Antena *antenaHead, Antena *atual)</div><div class="ttdoc">Função para saber quantas Antenas existem com a mesma frequência.</div><div class="ttdef"><b>Definição</b> <a href="_buscas_8c_source.html#l00111">Buscas.c:111</a></div></div>
+<div class="ttc" id="a_buscas_8h_html_aae70492309c8bc445d513b41d94c87b3"><div class="ttname"><a href="_buscas_8h.html#aae70492309c8bc445d513b41d94c87b3">TodosCaminhosPossiveis</a></div><div class="ttdeci">int TodosCaminhosPossiveis(Antena *antenaHead, int origemID, int destinoID, int distanciaPercorrida)</div><div class="ttdoc">Função que mostra todos os caminhos possíveis entre duas Antenas.</div><div class="ttdef"><b>Definição</b> <a href="_buscas_8c_source.html#l00217">Buscas.c:217</a></div></div>
+<div class="ttc" id="a_funcoes_8h_html"><div class="ttname"><a href="_funcoes_8h.html">Funcoes.h</a></div><div class="ttdoc">Ficheiro que cont�m as assinaturas das fun��es usadas em Funcoes.c.</div></div>
+<div class="ttc" id="astruct_antena_html"><div class="ttname"><a href="struct_antena.html">Antena</a></div><div class="ttdef"><b>Definição</b> <a href="_grafos_8h_source.html#l00011">Grafos.h:11</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

@@ -1,0 +1,462 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Manipulação de Grafos Dinâmicos com Listas Ligadas: Referência ao ficheiro Buscas.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Manipulação de Grafos Dinâmicos com Listas Ligadas
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Funções</a>  </div>
+  <div class="headertitle"><div class="title">Referência ao ficheiro Buscas.c</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Ficheiro que contém os algoritmos necessários para a Depth First Traversal e Breadth First Traversal.  
+<a href="#details">Mais...</a></p>
+<div class="textblock"><code>#include &quot;<a class="el" href="Buscas_8h_source.html">Buscas.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Diagrama de dependências de inclusão para Buscas.c:</div>
+<div class="dyncontent">
+<div class="center"><img src="Buscas_8c__incl.png" border="0" usemap="#aBuscas_8c" alt=""/></div>
+<map name="aBuscas_8c" id="aBuscas_8c">
+<area shape="rect" title="Ficheiro que contém os algoritmos necessários para a Depth First Traversal e Breadth First Traversal." alt="" coords="194,5,273,31"/>
+<area shape="rect" href="Buscas_8h.html" title="Ficheiro que contém as assinaturas usadas em Buscas.c." alt="" coords="193,79,273,104"/>
+<area shape="poly" title=" " alt="" coords="236,31,236,65,231,65,231,31"/>
+<area shape="rect" href="Funcoes_8h.html" title="Ficheiro que cont�m as assinaturas das fun��es usadas em Funcoes.c." alt="" coords="190,152,277,177"/>
+<area shape="poly" title=" " alt="" coords="229,104,227,139,222,138,224,104"/>
+<area shape="poly" title=" " alt="" coords="238,152,239,118,245,118,243,152"/>
+<area shape="rect" title=" " alt="" coords="5,225,72,251"/>
+<area shape="poly" title=" " alt="" coords="203,180,84,223,82,218,201,175"/>
+<area shape="rect" title=" " alt="" coords="97,225,167,251"/>
+<area shape="poly" title=" " alt="" coords="219,180,161,219,158,215,216,175"/>
+<area shape="rect" title=" " alt="" coords="192,225,275,251"/>
+<area shape="poly" title=" " alt="" coords="236,178,236,212,231,212,231,178"/>
+<area shape="rect" title=" " alt="" coords="299,225,378,251"/>
+<area shape="poly" title=" " alt="" coords="252,175,312,215,309,220,249,180"/>
+<area shape="rect" href="Grafos_8h.html" title="Ficheiro que contem as structs usadas." alt="" coords="403,225,480,251"/>
+<area shape="poly" title=" " alt="" coords="268,175,395,218,394,223,266,180"/>
+</map>
+</div>
+</div>
+<p><a href="Buscas_8c_source.html">Ir para o código fonte deste ficheiro.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Funções</h2></td></tr>
+<tr class="memitem:a4179c7165513871db7c6e0685f9c6284" id="r_a4179c7165513871db7c6e0685f9c6284"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structAntena.html">Antena</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Buscas_8c.html#a4179c7165513871db7c6e0685f9c6284">ProcurarAntenaPeloID</a> (<a class="el" href="structAntena.html">Antena</a> *antenaHead, int antenaID)</td></tr>
+<tr class="memdesc:a4179c7165513871db7c6e0685f9c6284"><td class="mdescLeft">&#160;</td><td class="mdescRight">Função que procura o apontador para a <a class="el" href="structAntena.html">Antena</a> a partir do id fornecido por parâmetro.  <br /></td></tr>
+<tr class="separator:a4179c7165513871db7c6e0685f9c6284"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a169798f591e840cfb6413956e30a25" id="r_a4a169798f591e840cfb6413956e30a25"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Buscas_8c.html#a4a169798f591e840cfb6413956e30a25">ResetarVisitados</a> (<a class="el" href="structAntena.html">Antena</a> *antenaHead)</td></tr>
+<tr class="memdesc:a4a169798f591e840cfb6413956e30a25"><td class="mdescLeft">&#160;</td><td class="mdescRight">Função para resetar o campo "visitado" da struct <a class="el" href="structAntena.html">Antena</a>.  <br /></td></tr>
+<tr class="separator:a4a169798f591e840cfb6413956e30a25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ebddda2454b08b12e7c00f68e512164" id="r_a8ebddda2454b08b12e7c00f68e512164"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Buscas_8c.html#a8ebddda2454b08b12e7c00f68e512164">NumeroAntenasMesmaFrequencia</a> (<a class="el" href="structAntena.html">Antena</a> *antenaHead, <a class="el" href="structAntena.html">Antena</a> *atual)</td></tr>
+<tr class="memdesc:a8ebddda2454b08b12e7c00f68e512164"><td class="mdescLeft">&#160;</td><td class="mdescRight">Função para saber quantas Antenas existem com a mesma frequência.  <br /></td></tr>
+<tr class="separator:a8ebddda2454b08b12e7c00f68e512164"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a741b075f0fd46e25493f9b6bbdccaaba" id="r_a741b075f0fd46e25493f9b6bbdccaaba"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Buscas_8c.html#a741b075f0fd46e25493f9b6bbdccaaba">DepthFirstTraversal</a> (<a class="el" href="structAntena.html">Antena</a> *antenaHead, int antenaID)</td></tr>
+<tr class="memdesc:a741b075f0fd46e25493f9b6bbdccaaba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Função recursiva que faz a travessia na profundidade.  <br /></td></tr>
+<tr class="separator:a741b075f0fd46e25493f9b6bbdccaaba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1301bf0da0eb3b63cab15d7daf28b929" id="r_a1301bf0da0eb3b63cab15d7daf28b929"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Buscas_8c.html#a1301bf0da0eb3b63cab15d7daf28b929">BreadthFirstTraversal</a> (<a class="el" href="structAntena.html">Antena</a> *antenaHead, int antenaID)</td></tr>
+<tr class="memdesc:a1301bf0da0eb3b63cab15d7daf28b929"><td class="mdescLeft">&#160;</td><td class="mdescRight">Função não recursiva que faz a travessia na largura.  <br /></td></tr>
+<tr class="separator:a1301bf0da0eb3b63cab15d7daf28b929"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae70492309c8bc445d513b41d94c87b3" id="r_aae70492309c8bc445d513b41d94c87b3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Buscas_8c.html#aae70492309c8bc445d513b41d94c87b3">TodosCaminhosPossiveis</a> (<a class="el" href="structAntena.html">Antena</a> *antenaHead, int origemID, int destinoID, int distanciaPercorrida)</td></tr>
+<tr class="memdesc:aae70492309c8bc445d513b41d94c87b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Função que mostra todos os caminhos possíveis entre duas Antenas.  <br /></td></tr>
+<tr class="separator:aae70492309c8bc445d513b41d94c87b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descrição detalhada</h2>
+<div class="textblock"><p>Ficheiro que contém os algoritmos necessários para a Depth First Traversal e Breadth First Traversal. </p>
+<dl class="section author"><dt>Autor</dt><dd>ptnunooliveira </dd></dl>
+<dl class="section date"><dt>Data</dt><dd>May 2025 </dd></dl>
+
+<p class="definition">Definido no ficheiro <a class="el" href="Buscas_8c_source.html">Buscas.c</a>.</p>
+</div><h2 class="groupheader">Documentação das funções</h2>
+<a id="a1301bf0da0eb3b63cab15d7daf28b929" name="a1301bf0da0eb3b63cab15d7daf28b929"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1301bf0da0eb3b63cab15d7daf28b929">&#9670;&#160;</a></span>BreadthFirstTraversal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int BreadthFirstTraversal </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structAntena.html">Antena</a> *&#160;</td>
+          <td class="paramname"><em>antenaHead</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>antenaID</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Função não recursiva que faz a travessia na largura. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">antenaHead</td><td>Apontador para o início do grafo. </td></tr>
+    <tr><td class="paramname">antenaID</td><td>Identificador da <a class="el" href="structAntena.html">Antena</a> onde começa a travessia.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>0 em caso de sucesso. </dd></dl>
+
+<p class="definition">Definido na linha <a class="el" href="Buscas_8c_source.html#l00170">170</a> do ficheiro <a class="el" href="Buscas_8c_source.html">Buscas.c</a>.</p>
+<div class="dynheader">
+Grafo de chamadas desta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="Buscas_8c_a1301bf0da0eb3b63cab15d7daf28b929_cgraph.png" border="0" usemap="#aBuscas_8c_a1301bf0da0eb3b63cab15d7daf28b929_cgraph" alt=""/></div>
+<map name="aBuscas_8c_a1301bf0da0eb3b63cab15d7daf28b929_cgraph" id="aBuscas_8c_a1301bf0da0eb3b63cab15d7daf28b929_cgraph">
+<area shape="rect" title="Função não recursiva que faz a travessia na largura." alt="" coords="5,31,165,56"/>
+<area shape="rect" href="Buscas_8c.html#a8ebddda2454b08b12e7c00f68e512164" title="Função para saber quantas Antenas existem com a mesma frequência." alt="" coords="213,5,460,31"/>
+<area shape="poly" title=" " alt="" coords="165,33,200,29,200,34,166,38"/>
+<area shape="rect" href="Buscas_8c.html#a4179c7165513871db7c6e0685f9c6284" title="Função que procura o apontador para a Antena a partir do id fornecido por parâmetro." alt="" coords="255,55,419,80"/>
+<area shape="poly" title=" " alt="" coords="166,48,242,56,241,61,165,54"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a741b075f0fd46e25493f9b6bbdccaaba" name="a741b075f0fd46e25493f9b6bbdccaaba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a741b075f0fd46e25493f9b6bbdccaaba">&#9670;&#160;</a></span>DepthFirstTraversal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int DepthFirstTraversal </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structAntena.html">Antena</a> *&#160;</td>
+          <td class="paramname"><em>antenaHead</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>antenaID</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Função recursiva que faz a travessia na profundidade. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">antenaHead</td><td>Apontador para o início do grafo. </td></tr>
+    <tr><td class="paramname">antenaID</td><td>Identificador da <a class="el" href="structAntena.html">Antena</a> onde começa a travessia.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>0 em caso de sucesso. </dd></dl>
+
+<p class="definition">Definido na linha <a class="el" href="Buscas_8c_source.html#l00137">137</a> do ficheiro <a class="el" href="Buscas_8c_source.html">Buscas.c</a>.</p>
+<div class="dynheader">
+Grafo de chamadas desta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="Buscas_8c_a741b075f0fd46e25493f9b6bbdccaaba_cgraph.png" border="0" usemap="#aBuscas_8c_a741b075f0fd46e25493f9b6bbdccaaba_cgraph" alt=""/></div>
+<map name="aBuscas_8c_a741b075f0fd46e25493f9b6bbdccaaba_cgraph" id="aBuscas_8c_a741b075f0fd46e25493f9b6bbdccaaba_cgraph">
+<area shape="rect" title="Função recursiva que faz a travessia na profundidade." alt="" coords="5,29,153,55"/>
+<area shape="poly" title=" " alt="" coords="46,31,39,21,43,11,56,5,79,3,108,6,119,16,115,20,105,11,79,8,58,10,46,15,44,20,50,28"/>
+<area shape="rect" href="Buscas_8c.html#a4179c7165513871db7c6e0685f9c6284" title="Função que procura o apontador para a Antena a partir do id fornecido por parâmetro." alt="" coords="201,29,365,55"/>
+<area shape="poly" title=" " alt="" coords="153,39,188,39,188,45,153,45"/>
+</map>
+</div>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="Buscas_8c_a741b075f0fd46e25493f9b6bbdccaaba_icgraph.png" border="0" usemap="#aBuscas_8c_a741b075f0fd46e25493f9b6bbdccaaba_icgraph" alt=""/></div>
+<map name="aBuscas_8c_a741b075f0fd46e25493f9b6bbdccaaba_icgraph" id="aBuscas_8c_a741b075f0fd46e25493f9b6bbdccaaba_icgraph">
+<area shape="rect" title="Função recursiva que faz a travessia na profundidade." alt="" coords="5,29,153,55"/>
+<area shape="poly" title=" " alt="" coords="105,18,97,11,79,8,64,10,56,15,55,20,59,28,54,31,49,21,52,11,62,5,79,3,100,6,108,15"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a8ebddda2454b08b12e7c00f68e512164" name="a8ebddda2454b08b12e7c00f68e512164"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ebddda2454b08b12e7c00f68e512164">&#9670;&#160;</a></span>NumeroAntenasMesmaFrequencia()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int NumeroAntenasMesmaFrequencia </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structAntena.html">Antena</a> *&#160;</td>
+          <td class="paramname"><em>antenaHead</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structAntena.html">Antena</a> *&#160;</td>
+          <td class="paramname"><em>atual</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Função para saber quantas Antenas existem com a mesma frequência. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">antenaHead</td><td>Apontador para o início da lista das Antenas. </td></tr>
+    <tr><td class="paramname">atual</td><td>Apontador para a <a class="el" href="structAntena.html">Antena</a> que queremos verificar a frequência.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>N�mero de Antenas com aquela frequência. </dd></dl>
+
+<p class="definition">Definido na linha <a class="el" href="Buscas_8c_source.html#l00111">111</a> do ficheiro <a class="el" href="Buscas_8c_source.html">Buscas.c</a>.</p>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="Buscas_8c_a8ebddda2454b08b12e7c00f68e512164_icgraph.png" border="0" usemap="#aBuscas_8c_a8ebddda2454b08b12e7c00f68e512164_icgraph" alt=""/></div>
+<map name="aBuscas_8c_a8ebddda2454b08b12e7c00f68e512164_icgraph" id="aBuscas_8c_a8ebddda2454b08b12e7c00f68e512164_icgraph">
+<area shape="rect" title="Função para saber quantas Antenas existem com a mesma frequência." alt="" coords="213,5,460,31"/>
+<area shape="rect" href="Buscas_8c.html#a1301bf0da0eb3b63cab15d7daf28b929" title="Função não recursiva que faz a travessia na largura." alt="" coords="5,5,165,31"/>
+<area shape="poly" title=" " alt="" coords="200,21,166,21,166,15,200,15"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a4179c7165513871db7c6e0685f9c6284" name="a4179c7165513871db7c6e0685f9c6284"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4179c7165513871db7c6e0685f9c6284">&#9670;&#160;</a></span>ProcurarAntenaPeloID()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structAntena.html">Antena</a> * ProcurarAntenaPeloID </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structAntena.html">Antena</a> *&#160;</td>
+          <td class="paramname"><em>antenaHead</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>antenaID</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Função que procura o apontador para a <a class="el" href="structAntena.html">Antena</a> a partir do id fornecido por parâmetro. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">antenaHead</td><td>Apontador para o início da lista das Antenas. </td></tr>
+    <tr><td class="paramname">antenaID</td><td>Número de identificação da <a class="el" href="structAntena.html">Antena</a> a encontrar.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Apontador para a <a class="el" href="structAntena.html">Antena</a> encontrada. </dd></dl>
+
+<p class="definition">Definido na linha <a class="el" href="Buscas_8c_source.html#l00061">61</a> do ficheiro <a class="el" href="Buscas_8c_source.html">Buscas.c</a>.</p>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="Buscas_8c_a4179c7165513871db7c6e0685f9c6284_icgraph.png" border="0" usemap="#aBuscas_8c_a4179c7165513871db7c6e0685f9c6284_icgraph" alt=""/></div>
+<map name="aBuscas_8c_a4179c7165513871db7c6e0685f9c6284_icgraph" id="aBuscas_8c_a4179c7165513871db7c6e0685f9c6284_icgraph">
+<area shape="rect" title="Função que procura o apontador para a Antena a partir do id fornecido por parâmetro." alt="" coords="239,79,403,104"/>
+<area shape="rect" href="Buscas_8c.html#a1301bf0da0eb3b63cab15d7daf28b929" title="Função não recursiva que faz a travessia na largura." alt="" coords="18,5,178,31"/>
+<area shape="poly" title=" " alt="" coords="275,76,190,45,151,33,153,28,191,39,277,71"/>
+<area shape="rect" href="Buscas_8c.html#a741b075f0fd46e25493f9b6bbdccaaba" title="Função recursiva que faz a travessia na profundidade." alt="" coords="24,79,172,104"/>
+<area shape="poly" title=" " alt="" coords="225,94,172,94,172,89,225,89"/>
+<area shape="rect" href="Buscas_8c.html#aae70492309c8bc445d513b41d94c87b3" title="Função que mostra todos os caminhos possíveis entre duas Antenas." alt="" coords="5,152,191,177"/>
+<area shape="poly" title=" " alt="" coords="269,111,138,154,137,149,267,106"/>
+<area shape="poly" title=" " alt="" coords="138,69,127,61,98,57,74,59,62,64,59,70,66,77,62,80,54,70,58,60,73,54,98,52,129,56,141,65"/>
+<area shape="poly" title=" " alt="" coords="138,142,127,134,98,131,74,133,62,138,59,143,66,150,62,154,54,144,58,134,73,128,98,125,129,129,141,138"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a4a169798f591e840cfb6413956e30a25" name="a4a169798f591e840cfb6413956e30a25"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a169798f591e840cfb6413956e30a25">&#9670;&#160;</a></span>ResetarVisitados()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ResetarVisitados </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structAntena.html">Antena</a> *&#160;</td>
+          <td class="paramname"><em>antenaHead</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Função para resetar o campo "visitado" da struct <a class="el" href="structAntena.html">Antena</a>. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">antenaHead</td><td>Apontador para o início da lista</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>True em caso de sucesso, False caso contrário. </dd></dl>
+
+<p class="definition">Definido na linha <a class="el" href="Buscas_8c_source.html#l00087">87</a> do ficheiro <a class="el" href="Buscas_8c_source.html">Buscas.c</a>.</p>
+
+</div>
+</div>
+<a id="aae70492309c8bc445d513b41d94c87b3" name="aae70492309c8bc445d513b41d94c87b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae70492309c8bc445d513b41d94c87b3">&#9670;&#160;</a></span>TodosCaminhosPossiveis()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int TodosCaminhosPossiveis </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structAntena.html">Antena</a> *&#160;</td>
+          <td class="paramname"><em>antenaHead</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>origemID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>destinoID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>distanciaPercorrida</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Função que mostra todos os caminhos possíveis entre duas Antenas. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">antenaHead</td><td>Apontador para o início do Grafo </td></tr>
+    <tr><td class="paramname">origemID</td><td>Identificador da <a class="el" href="structAntena.html">Antena</a> de origem. </td></tr>
+    <tr><td class="paramname">destinoID</td><td>Identificador da <a class="el" href="structAntena.html">Antena</a> de destino. </td></tr>
+    <tr><td class="paramname">distanciaPercorrida</td><td>Distância percorrida em cada caminho.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Número de caminhos possíveis. </dd></dl>
+
+<p class="definition">Definido na linha <a class="el" href="Buscas_8c_source.html#l00217">217</a> do ficheiro <a class="el" href="Buscas_8c_source.html">Buscas.c</a>.</p>
+<div class="dynheader">
+Grafo de chamadas desta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="Buscas_8c_aae70492309c8bc445d513b41d94c87b3_cgraph.png" border="0" usemap="#aBuscas_8c_aae70492309c8bc445d513b41d94c87b3_cgraph" alt=""/></div>
+<map name="aBuscas_8c_aae70492309c8bc445d513b41d94c87b3_cgraph" id="aBuscas_8c_aae70492309c8bc445d513b41d94c87b3_cgraph">
+<area shape="rect" title="Função que mostra todos os caminhos possíveis entre duas Antenas." alt="" coords="5,29,191,55"/>
+<area shape="poly" title=" " alt="" coords="62,31,54,21,58,11,73,5,98,3,129,6,141,15,138,20,127,11,98,8,74,10,62,15,59,20,66,28"/>
+<area shape="rect" href="Buscas_8c.html#a4179c7165513871db7c6e0685f9c6284" title="Função que procura o apontador para a Antena a partir do id fornecido por parâmetro." alt="" coords="239,29,403,55"/>
+<area shape="poly" title=" " alt="" coords="191,39,225,39,225,45,191,45"/>
+</map>
+</div>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="Buscas_8c_aae70492309c8bc445d513b41d94c87b3_icgraph.png" border="0" usemap="#aBuscas_8c_aae70492309c8bc445d513b41d94c87b3_icgraph" alt=""/></div>
+<map name="aBuscas_8c_aae70492309c8bc445d513b41d94c87b3_icgraph" id="aBuscas_8c_aae70492309c8bc445d513b41d94c87b3_icgraph">
+<area shape="rect" title="Função que mostra todos os caminhos possíveis entre duas Antenas." alt="" coords="5,29,191,55"/>
+<area shape="poly" title=" " alt="" coords="131,19,121,11,98,8,79,10,68,15,66,20,72,28,67,31,61,21,64,11,77,5,98,3,123,6,134,15"/>
+</map>
+</div>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

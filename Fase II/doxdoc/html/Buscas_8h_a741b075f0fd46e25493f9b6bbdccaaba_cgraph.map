@@ -1,0 +1,6 @@
+<map id="DepthFirstTraversal" name="DepthFirstTraversal">
+<area shape="rect" id="Node000001" title="Função recursiva que faz a travessia na profundidade." alt="" coords="5,29,153,55"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="46,31,39,21,43,11,56,5,79,3,108,6,119,16,115,20,105,11,79,8,58,10,46,15,44,20,50,28"/>
+<area shape="rect" id="Node000002" href="$Buscas_8c.html#a4179c7165513871db7c6e0685f9c6284" title="Função que procura o apontador para a Antena a partir do id fornecido por parâmetro." alt="" coords="201,29,365,55"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="153,39,188,39,188,45,153,45"/>
+</map>

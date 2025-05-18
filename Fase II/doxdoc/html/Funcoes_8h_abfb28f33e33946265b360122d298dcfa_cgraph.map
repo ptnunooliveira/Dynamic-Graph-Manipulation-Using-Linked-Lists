@@ -1,0 +1,11 @@
+<map id="LerFicheiroBinario" name="LerFicheiroBinario">
+<area shape="rect" id="Node000001" title="Função para ler a informação do Grafo contida num ficheiro binário." alt="" coords="5,80,144,105"/>
+<area shape="rect" id="Node000002" href="$Funcoes_8c.html#ad4af5efcb0c2442000fbd5474482ed3a" title="Função para criar uma Antena." alt="" coords="247,5,345,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="101,77,191,39,232,28,234,33,193,45,103,82"/>
+<area shape="rect" id="Node000003" href="$Funcoes_8c.html#a500e4d8d01f7969a164bfb3517cc3338" title="Função para criar uma Aresta." alt="" coords="249,55,343,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="144,82,235,72,235,77,145,87"/>
+<area shape="rect" id="Node000004" href="$Funcoes_8c.html#a467dabf8a49fd4d8bc39021e9434c88c" title="Função para inserir uma Antena na respetiva lista." alt="" coords="241,104,351,129"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="145,98,228,107,228,112,144,103"/>
+<area shape="rect" id="Node000005" href="$Funcoes_8c.html#afb5114ede97ca32d3de49fbf335748f2" title="Função que liga a variável id ao destino da Aresta." alt="" coords="192,153,400,179"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="105,103,193,138,224,147,223,153,191,143,103,108"/>
+</map>

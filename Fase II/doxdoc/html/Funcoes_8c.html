@@ -1,0 +1,911 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Manipulação de Grafos Dinâmicos com Listas Ligadas: Referência ao ficheiro Funcoes.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Manipulação de Grafos Dinâmicos com Listas Ligadas
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Funções</a>  </div>
+  <div class="headertitle"><div class="title">Referência ao ficheiro Funcoes.c</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Implementação de funções para manipulação de grafos.  
+<a href="#details">Mais...</a></p>
+<div class="textblock"><code>#include &quot;<a class="el" href="Funcoes_8h_source.html">Funcoes.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Diagrama de dependências de inclusão para Funcoes.c:</div>
+<div class="dyncontent">
+<div class="center"><img src="Funcoes_8c__incl.png" border="0" usemap="#aFuncoes_8c" alt=""/></div>
+<map name="aFuncoes_8c" id="aFuncoes_8c">
+<area shape="rect" title="Implementação de funções para manipulação de grafos." alt="" coords="295,5,382,31"/>
+<area shape="rect" href="Funcoes_8h.html" title="Ficheiro que cont�m as assinaturas das fun��es usadas em Funcoes.c." alt="" coords="295,79,382,104"/>
+<area shape="poly" title=" " alt="" coords="341,31,341,65,336,65,336,31"/>
+<area shape="rect" title=" " alt="" coords="5,152,72,177"/>
+<area shape="poly" title=" " alt="" coords="296,105,86,154,85,149,294,100"/>
+<area shape="rect" title=" " alt="" coords="97,152,167,177"/>
+<area shape="poly" title=" " alt="" coords="306,107,179,150,178,145,305,101"/>
+<area shape="rect" title=" " alt="" coords="192,152,275,177"/>
+<area shape="poly" title=" " alt="" coords="323,106,263,147,260,142,320,102"/>
+<area shape="rect" title=" " alt="" coords="299,152,378,177"/>
+<area shape="poly" title=" " alt="" coords="341,104,341,138,336,138,336,104"/>
+<area shape="rect" href="Grafos_8h.html" title="Ficheiro que contem as structs usadas." alt="" coords="403,152,480,177"/>
+<area shape="poly" title=" " alt="" coords="357,102,415,142,412,146,354,106"/>
+<area shape="rect" href="Buscas_8h.html" title="Ficheiro que contém as assinaturas usadas em Buscas.c." alt="" coords="504,152,584,177"/>
+<area shape="poly" title=" " alt="" coords="366,102,492,145,490,150,364,107"/>
+<area shape="poly" title=" " alt="" coords="516,154,391,111,392,106,518,149"/>
+</map>
+</div>
+</div>
+<p><a href="Funcoes_8c_source.html">Ir para o código fonte deste ficheiro.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Funções</h2></td></tr>
+<tr class="memitem:ad4af5efcb0c2442000fbd5474482ed3a" id="r_ad4af5efcb0c2442000fbd5474482ed3a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structAntena.html">Antena</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Funcoes_8c.html#ad4af5efcb0c2442000fbd5474482ed3a">CriarAntena</a> (int linha, int coluna, char tipoAntena, int *id, int *val)</td></tr>
+<tr class="memdesc:ad4af5efcb0c2442000fbd5474482ed3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Função para criar uma <a class="el" href="structAntena.html">Antena</a>.  <br /></td></tr>
+<tr class="separator:ad4af5efcb0c2442000fbd5474482ed3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a467dabf8a49fd4d8bc39021e9434c88c" id="r_a467dabf8a49fd4d8bc39021e9434c88c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structAntena.html">Antena</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Funcoes_8c.html#a467dabf8a49fd4d8bc39021e9434c88c">InserirAntena</a> (<a class="el" href="structAntena.html">Antena</a> *head, <a class="el" href="structAntena.html">Antena</a> *nova, int *val)</td></tr>
+<tr class="memdesc:a467dabf8a49fd4d8bc39021e9434c88c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Função para inserir uma <a class="el" href="structAntena.html">Antena</a> na respetiva lista.  <br /></td></tr>
+<tr class="separator:a467dabf8a49fd4d8bc39021e9434c88c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a500e4d8d01f7969a164bfb3517cc3338" id="r_a500e4d8d01f7969a164bfb3517cc3338"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structArestas.html">Arestas</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Funcoes_8c.html#a500e4d8d01f7969a164bfb3517cc3338">CriarAresta</a> (<a class="el" href="structAntena.html">Antena</a> *origem, int destinoID, int distancia, int *val)</td></tr>
+<tr class="memdesc:a500e4d8d01f7969a164bfb3517cc3338"><td class="mdescLeft">&#160;</td><td class="mdescRight">Função para criar uma Aresta.  <br /></td></tr>
+<tr class="separator:a500e4d8d01f7969a164bfb3517cc3338"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ac73fe468fdc3985b2bfd484b27fbc7" id="r_a3ac73fe468fdc3985b2bfd484b27fbc7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structArestas.html">Arestas</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Funcoes_8c.html#a3ac73fe468fdc3985b2bfd484b27fbc7">InserirAresta</a> (<a class="el" href="structArestas.html">Arestas</a> *head, <a class="el" href="structArestas.html">Arestas</a> *nova, int *val)</td></tr>
+<tr class="memdesc:a3ac73fe468fdc3985b2bfd484b27fbc7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Função para inserir uma Aresta na respetiva lista.  <br /></td></tr>
+<tr class="separator:a3ac73fe468fdc3985b2bfd484b27fbc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4ebad78f96b698698e900d209ed0092" id="r_ad4ebad78f96b698698e900d209ed0092"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structAntena.html">Antena</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Funcoes_8c.html#ad4ebad78f96b698698e900d209ed0092">LigarAntenasArestas</a> (<a class="el" href="structAntena.html">Antena</a> *antenaHead, <a class="el" href="structArestas.html">Arestas</a> *arestasHead, int *val)</td></tr>
+<tr class="memdesc:ad4ebad78f96b698698e900d209ed0092"><td class="mdescLeft">&#160;</td><td class="mdescRight">Função para ligar as <a class="el" href="structArestas.html">Arestas</a> às respetivas Antenas de origem.  <br /></td></tr>
+<tr class="separator:ad4ebad78f96b698698e900d209ed0092"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4fdaa51c8b643413d79a70616e83e4e" id="r_af4fdaa51c8b643413d79a70616e83e4e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structArestas.html">Arestas</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Funcoes_8c.html#af4fdaa51c8b643413d79a70616e83e4e">CalcularArestas</a> (<a class="el" href="structAntena.html">Antena</a> *antenaHead, <a class="el" href="structArestas.html">Arestas</a> *arestasHead, int *val)</td></tr>
+<tr class="memdesc:af4fdaa51c8b643413d79a70616e83e4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Função para calcular as <a class="el" href="structArestas.html">Arestas</a>.  <br /></td></tr>
+<tr class="separator:af4fdaa51c8b643413d79a70616e83e4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb5114ede97ca32d3de49fbf335748f2" id="r_afb5114ede97ca32d3de49fbf335748f2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structAntena.html">Antena</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Funcoes_8c.html#afb5114ede97ca32d3de49fbf335748f2">LigarAntenaDestinoAntenaId</a> (<a class="el" href="structAntena.html">Antena</a> *antenaHead, int *val)</td></tr>
+<tr class="memdesc:afb5114ede97ca32d3de49fbf335748f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Função que liga a variável id ao destino da Aresta.  <br /></td></tr>
+<tr class="separator:afb5114ede97ca32d3de49fbf335748f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a111dfbf7ea252c28e95f431c20cfc22a" id="r_a111dfbf7ea252c28e95f431c20cfc22a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structAntena.html">Antena</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Funcoes_8c.html#a111dfbf7ea252c28e95f431c20cfc22a">RemoverAntena</a> (<a class="el" href="structAntena.html">Antena</a> *antenaHead, int antenaID, int *val)</td></tr>
+<tr class="memdesc:a111dfbf7ea252c28e95f431c20cfc22a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Função para Remover uma <a class="el" href="structAntena.html">Antena</a> e as respetivas <a class="el" href="structArestas.html">Arestas</a> do grafo.  <br /></td></tr>
+<tr class="separator:a111dfbf7ea252c28e95f431c20cfc22a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7cc58d72f39536ab43bafee7e5b5512b" id="r_a7cc58d72f39536ab43bafee7e5b5512b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structAntena.html">Antena</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Funcoes_8c.html#a7cc58d72f39536ab43bafee7e5b5512b">LerFicheiro</a> (char *nomeFicheiro, <a class="el" href="structAntena.html">Antena</a> *antenaHead, int *id, int *val)</td></tr>
+<tr class="memdesc:a7cc58d72f39536ab43bafee7e5b5512b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Função para ler dados a partir de um ficheiro não binário.  <br /></td></tr>
+<tr class="separator:a7cc58d72f39536ab43bafee7e5b5512b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1bebfa8e5dbb1056c0573a99a5df8f5" id="r_ae1bebfa8e5dbb1056c0573a99a5df8f5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Funcoes_8c.html#ae1bebfa8e5dbb1056c0573a99a5df8f5">GravarFicheiro</a> (char *nomeFicheiro, <a class="el" href="structAntena.html">Antena</a> *antenaHead)</td></tr>
+<tr class="memdesc:ae1bebfa8e5dbb1056c0573a99a5df8f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Função que permite gravar apenas a posição das Antenas num ficheiro não binário.  <br /></td></tr>
+<tr class="separator:ae1bebfa8e5dbb1056c0573a99a5df8f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66fd200f181fa474c82922e30f81b1a4" id="r_a66fd200f181fa474c82922e30f81b1a4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Funcoes_8c.html#a66fd200f181fa474c82922e30f81b1a4">GravarFicheiroBinario</a> (char *nomeFicheiro, <a class="el" href="structAntena.html">Antena</a> *antenaHead, int id)</td></tr>
+<tr class="memdesc:a66fd200f181fa474c82922e30f81b1a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Função para gravar os dados do grafo em ficheiro binário.  <br /></td></tr>
+<tr class="separator:a66fd200f181fa474c82922e30f81b1a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abfb28f33e33946265b360122d298dcfa" id="r_abfb28f33e33946265b360122d298dcfa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structAntena.html">Antena</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Funcoes_8c.html#abfb28f33e33946265b360122d298dcfa">LerFicheiroBinario</a> (char *nomeFicheiro, int *id, int *val)</td></tr>
+<tr class="memdesc:abfb28f33e33946265b360122d298dcfa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Função para ler a informação do Grafo contida num ficheiro binário.  <br /></td></tr>
+<tr class="separator:abfb28f33e33946265b360122d298dcfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a74669df35eaf5b7503010b70d21a88" id="r_a0a74669df35eaf5b7503010b70d21a88"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Funcoes_8c.html#a0a74669df35eaf5b7503010b70d21a88">mostrarLista</a> (<a class="el" href="structAntena.html">Antena</a> *head)</td></tr>
+<tr class="separator:a0a74669df35eaf5b7503010b70d21a88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86d9ea91e8ad19b3cda6baacf129718b" id="r_a86d9ea91e8ad19b3cda6baacf129718b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Funcoes_8c.html#a86d9ea91e8ad19b3cda6baacf129718b">mostrarListaArestas</a> (<a class="el" href="structArestas.html">Arestas</a> *head)</td></tr>
+<tr class="separator:a86d9ea91e8ad19b3cda6baacf129718b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1bb3bb91b6584358cedf4656e4894d2c" id="r_a1bb3bb91b6584358cedf4656e4894d2c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Funcoes_8c.html#a1bb3bb91b6584358cedf4656e4894d2c">ContarAntenas</a> (<a class="el" href="structAntena.html">Antena</a> *head)</td></tr>
+<tr class="separator:a1bb3bb91b6584358cedf4656e4894d2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descrição detalhada</h2>
+<div class="textblock"><p>Implementação de funções para manipulação de grafos. </p>
+<dl class="section author"><dt>Autor</dt><dd>ptnunooliveira </dd></dl>
+<dl class="section date"><dt>Data</dt><dd>May 2025 </dd></dl>
+
+<p class="definition">Definido no ficheiro <a class="el" href="Funcoes_8c_source.html">Funcoes.c</a>.</p>
+</div><h2 class="groupheader">Documentação das funções</h2>
+<a id="af4fdaa51c8b643413d79a70616e83e4e" name="af4fdaa51c8b643413d79a70616e83e4e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4fdaa51c8b643413d79a70616e83e4e">&#9670;&#160;</a></span>CalcularArestas()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structArestas.html">Arestas</a> * CalcularArestas </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structAntena.html">Antena</a> *&#160;</td>
+          <td class="paramname"><em>antenaHead</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structArestas.html">Arestas</a> *&#160;</td>
+          <td class="paramname"><em>arestasHead</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>val</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Função para calcular as <a class="el" href="structArestas.html">Arestas</a>. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">antenaHead</td><td>Apontador para o início da lista das Antenas. </td></tr>
+    <tr><td class="paramname">arestasHead</td><td>Apontador para o início da lista das <a class="el" href="structArestas.html">Arestas</a>. </td></tr>
+    <tr><td class="paramname">val</td><td>Controlo de erros.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Apontador para o início da lista das <a class="el" href="structArestas.html">Arestas</a>. </dd></dl>
+
+<p class="definition">Definido na linha <a class="el" href="Funcoes_8c_source.html#l00333">333</a> do ficheiro <a class="el" href="Funcoes_8c_source.html">Funcoes.c</a>.</p>
+<div class="dynheader">
+Grafo de chamadas desta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="Funcoes_8c_af4fdaa51c8b643413d79a70616e83e4e_cgraph.png" border="0" usemap="#aFuncoes_8c_af4fdaa51c8b643413d79a70616e83e4e_cgraph" alt=""/></div>
+<map name="aFuncoes_8c_af4fdaa51c8b643413d79a70616e83e4e_cgraph" id="aFuncoes_8c_af4fdaa51c8b643413d79a70616e83e4e_cgraph">
+<area shape="rect" title="Função para calcular as Arestas." alt="" coords="5,31,129,56"/>
+<area shape="rect" href="Funcoes_8c.html#a500e4d8d01f7969a164bfb3517cc3338" title="Função para criar uma Aresta." alt="" coords="183,5,277,31"/>
+<area shape="poly" title=" " alt="" coords="129,31,168,25,169,30,130,36"/>
+<area shape="rect" href="Funcoes_8c.html#a3ac73fe468fdc3985b2bfd484b27fbc7" title="Função para inserir uma Aresta na respetiva lista." alt="" coords="177,55,283,80"/>
+<area shape="poly" title=" " alt="" coords="130,50,164,55,163,60,129,55"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a1bb3bb91b6584358cedf4656e4894d2c" name="a1bb3bb91b6584358cedf4656e4894d2c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1bb3bb91b6584358cedf4656e4894d2c">&#9670;&#160;</a></span>ContarAntenas()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ContarAntenas </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structAntena.html">Antena</a> *&#160;</td>
+          <td class="paramname"><em>head</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definido na linha <a class="el" href="Funcoes_8c_source.html#l00854">854</a> do ficheiro <a class="el" href="Funcoes_8c_source.html">Funcoes.c</a>.</p>
+
+</div>
+</div>
+<a id="ad4af5efcb0c2442000fbd5474482ed3a" name="ad4af5efcb0c2442000fbd5474482ed3a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4af5efcb0c2442000fbd5474482ed3a">&#9670;&#160;</a></span>CriarAntena()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structAntena.html">Antena</a> * CriarAntena </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>linha</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>coluna</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>tipoAntena</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>val</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Função para criar uma <a class="el" href="structAntena.html">Antena</a>. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">linha</td><td>Coordenada da linha da <a class="el" href="structAntena.html">Antena</a>. </td></tr>
+    <tr><td class="paramname">coluna</td><td>Coordenada da coluna da <a class="el" href="structAntena.html">Antena</a>. </td></tr>
+    <tr><td class="paramname">tipoAntena</td><td>Frequência da <a class="el" href="structAntena.html">Antena</a>. </td></tr>
+    <tr><td class="paramname">id</td><td>Número de identificação da <a class="el" href="structAntena.html">Antena</a>. </td></tr>
+    <tr><td class="paramname">val</td><td>Controlo de erros.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Apontador para um tipo <a class="el" href="structAntena.html">Antena</a>. </dd></dl>
+
+<p class="definition">Definido na linha <a class="el" href="Funcoes_8c_source.html#l00026">26</a> do ficheiro <a class="el" href="Funcoes_8c_source.html">Funcoes.c</a>.</p>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="Funcoes_8c_ad4af5efcb0c2442000fbd5474482ed3a_icgraph.png" border="0" usemap="#aFuncoes_8c_ad4af5efcb0c2442000fbd5474482ed3a_icgraph" alt=""/></div>
+<map name="aFuncoes_8c_ad4af5efcb0c2442000fbd5474482ed3a_icgraph" id="aFuncoes_8c_ad4af5efcb0c2442000fbd5474482ed3a_icgraph">
+<area shape="rect" title="Função para criar uma Antena." alt="" coords="192,31,291,56"/>
+<area shape="rect" href="Funcoes_8c.html#a7cc58d72f39536ab43bafee7e5b5512b" title="Função para ler dados a partir de um ficheiro não binário." alt="" coords="28,5,121,31"/>
+<area shape="poly" title=" " alt="" coords="178,36,121,28,122,22,179,31"/>
+<area shape="rect" href="Funcoes_8c.html#abfb28f33e33946265b360122d298dcfa" title="Função para ler a informação do Grafo contida num ficheiro binário." alt="" coords="5,55,144,80"/>
+<area shape="poly" title=" " alt="" coords="179,55,144,60,144,55,178,50"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a500e4d8d01f7969a164bfb3517cc3338" name="a500e4d8d01f7969a164bfb3517cc3338"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a500e4d8d01f7969a164bfb3517cc3338">&#9670;&#160;</a></span>CriarAresta()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structArestas.html">Arestas</a> * CriarAresta </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structAntena.html">Antena</a> *&#160;</td>
+          <td class="paramname"><em>origem</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>destinoID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>distancia</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>val</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Função para criar uma Aresta. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">origem</td><td>Apontador para a origem da aresta. </td></tr>
+    <tr><td class="paramname">destinoID</td><td>Número de identificação da antena destino. </td></tr>
+    <tr><td class="paramname">distancia</td><td>Peso da Aresta. </td></tr>
+    <tr><td class="paramname">val</td><td>Controlo de erros.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Apontador para um tipo Aresta. </dd></dl>
+
+<p class="definition">Definido na linha <a class="el" href="Funcoes_8c_source.html#l00131">131</a> do ficheiro <a class="el" href="Funcoes_8c_source.html">Funcoes.c</a>.</p>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="Funcoes_8c_a500e4d8d01f7969a164bfb3517cc3338_icgraph.png" border="0" usemap="#aFuncoes_8c_a500e4d8d01f7969a164bfb3517cc3338_icgraph" alt=""/></div>
+<map name="aFuncoes_8c_a500e4d8d01f7969a164bfb3517cc3338_icgraph" id="aFuncoes_8c_a500e4d8d01f7969a164bfb3517cc3338_icgraph">
+<area shape="rect" title="Função para criar uma Aresta." alt="" coords="192,31,287,56"/>
+<area shape="rect" href="Funcoes_8c.html#af4fdaa51c8b643413d79a70616e83e4e" title="Função para calcular as Arestas." alt="" coords="13,5,137,31"/>
+<area shape="poly" title=" " alt="" coords="178,37,137,30,137,25,178,31"/>
+<area shape="rect" href="Funcoes_8c.html#abfb28f33e33946265b360122d298dcfa" title="Função para ler a informação do Grafo contida num ficheiro binário." alt="" coords="5,55,144,80"/>
+<area shape="poly" title=" " alt="" coords="179,55,145,60,144,55,178,50"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ae1bebfa8e5dbb1056c0573a99a5df8f5" name="ae1bebfa8e5dbb1056c0573a99a5df8f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1bebfa8e5dbb1056c0573a99a5df8f5">&#9670;&#160;</a></span>GravarFicheiro()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int GravarFicheiro </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>nomeFicheiro</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structAntena.html">Antena</a> *&#160;</td>
+          <td class="paramname"><em>antenaHead</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Função que permite gravar apenas a posição das Antenas num ficheiro não binário. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nomeFicheiro</td><td>Nome do ficheiro onde se pretende guardar a posição das Antenas. </td></tr>
+    <tr><td class="paramname">antenaHead</td><td>Apontador para o início da lista das Antenas.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>0 em caso de sucesso </dd></dl>
+
+<p class="definition">Definido na linha <a class="el" href="Funcoes_8c_source.html#l00600">600</a> do ficheiro <a class="el" href="Funcoes_8c_source.html">Funcoes.c</a>.</p>
+
+</div>
+</div>
+<a id="a66fd200f181fa474c82922e30f81b1a4" name="a66fd200f181fa474c82922e30f81b1a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66fd200f181fa474c82922e30f81b1a4">&#9670;&#160;</a></span>GravarFicheiroBinario()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int GravarFicheiroBinario </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>nomeFicheiro</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structAntena.html">Antena</a> *&#160;</td>
+          <td class="paramname"><em>antenaHead</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>id</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Função para gravar os dados do grafo em ficheiro binário. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nomeFicheiro</td><td>Nome do ficheiro onde se pretende guarda a informação do grafo. </td></tr>
+    <tr><td class="paramname">antenaHead</td><td>Apontador para o início do grafo. </td></tr>
+    <tr><td class="paramname">id</td><td>Variável que contém quantas Antenas o grafo tem.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>0 em caso de sucesso. </dd></dl>
+
+<p class="definition">Definido na linha <a class="el" href="Funcoes_8c_source.html#l00661">661</a> do ficheiro <a class="el" href="Funcoes_8c_source.html">Funcoes.c</a>.</p>
+
+</div>
+</div>
+<a id="a467dabf8a49fd4d8bc39021e9434c88c" name="a467dabf8a49fd4d8bc39021e9434c88c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a467dabf8a49fd4d8bc39021e9434c88c">&#9670;&#160;</a></span>InserirAntena()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structAntena.html">Antena</a> * InserirAntena </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structAntena.html">Antena</a> *&#160;</td>
+          <td class="paramname"><em>head</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structAntena.html">Antena</a> *&#160;</td>
+          <td class="paramname"><em>nova</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>val</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Função para inserir uma <a class="el" href="structAntena.html">Antena</a> na respetiva lista. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">head</td><td>Apontador do início da lista. </td></tr>
+    <tr><td class="paramname">nova</td><td><a class="el" href="structAntena.html">Antena</a> que deseja-se inserir. </td></tr>
+    <tr><td class="paramname">val</td><td>Controlo de erros.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Apontador do início da lista. </dd></dl>
+
+<p class="definition">Definido na linha <a class="el" href="Funcoes_8c_source.html#l00062">62</a> do ficheiro <a class="el" href="Funcoes_8c_source.html">Funcoes.c</a>.</p>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="Funcoes_8c_a467dabf8a49fd4d8bc39021e9434c88c_icgraph.png" border="0" usemap="#aFuncoes_8c_a467dabf8a49fd4d8bc39021e9434c88c_icgraph" alt=""/></div>
+<map name="aFuncoes_8c_a467dabf8a49fd4d8bc39021e9434c88c_icgraph" id="aFuncoes_8c_a467dabf8a49fd4d8bc39021e9434c88c_icgraph">
+<area shape="rect" title="Função para inserir uma Antena na respetiva lista." alt="" coords="192,31,301,56"/>
+<area shape="rect" href="Funcoes_8c.html#a7cc58d72f39536ab43bafee7e5b5512b" title="Função para ler dados a partir de um ficheiro não binário." alt="" coords="28,5,121,31"/>
+<area shape="poly" title=" " alt="" coords="178,36,121,27,122,22,179,31"/>
+<area shape="rect" href="Funcoes_8c.html#abfb28f33e33946265b360122d298dcfa" title="Função para ler a informação do Grafo contida num ficheiro binário." alt="" coords="5,55,144,80"/>
+<area shape="poly" title=" " alt="" coords="179,55,145,60,144,55,178,50"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a3ac73fe468fdc3985b2bfd484b27fbc7" name="a3ac73fe468fdc3985b2bfd484b27fbc7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ac73fe468fdc3985b2bfd484b27fbc7">&#9670;&#160;</a></span>InserirAresta()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structArestas.html">Arestas</a> * InserirAresta </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structArestas.html">Arestas</a> *&#160;</td>
+          <td class="paramname"><em>head</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structArestas.html">Arestas</a> *&#160;</td>
+          <td class="paramname"><em>nova</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>val</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Função para inserir uma Aresta na respetiva lista. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">head</td><td>Apontador para o início da respetiva lista. </td></tr>
+    <tr><td class="paramname">nova</td><td>Apontador para a Aresta a inserir na lista. </td></tr>
+    <tr><td class="paramname">val</td><td>Controlo de erros.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Apontador para o início da lista. </dd></dl>
+
+<p class="definition">Definido na linha <a class="el" href="Funcoes_8c_source.html#l00163">163</a> do ficheiro <a class="el" href="Funcoes_8c_source.html">Funcoes.c</a>.</p>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="Funcoes_8c_a3ac73fe468fdc3985b2bfd484b27fbc7_icgraph.png" border="0" usemap="#aFuncoes_8c_a3ac73fe468fdc3985b2bfd484b27fbc7_icgraph" alt=""/></div>
+<map name="aFuncoes_8c_a3ac73fe468fdc3985b2bfd484b27fbc7_icgraph" id="aFuncoes_8c_a3ac73fe468fdc3985b2bfd484b27fbc7_icgraph">
+<area shape="rect" title="Função para inserir uma Aresta na respetiva lista." alt="" coords="177,5,283,31"/>
+<area shape="rect" href="Funcoes_8c.html#af4fdaa51c8b643413d79a70616e83e4e" title="Função para calcular as Arestas." alt="" coords="5,5,129,31"/>
+<area shape="poly" title=" " alt="" coords="164,21,130,21,130,15,164,15"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a7cc58d72f39536ab43bafee7e5b5512b" name="a7cc58d72f39536ab43bafee7e5b5512b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7cc58d72f39536ab43bafee7e5b5512b">&#9670;&#160;</a></span>LerFicheiro()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structAntena.html">Antena</a> * LerFicheiro </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>nomeFicheiro</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structAntena.html">Antena</a> *&#160;</td>
+          <td class="paramname"><em>antenaHead</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>val</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Função para ler dados a partir de um ficheiro não binário. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nomeFicheiro</td><td>Nome do ficheiro a ser lido. </td></tr>
+    <tr><td class="paramname">antenaHead</td><td>Apontador para o início da lista das Antenas. </td></tr>
+    <tr><td class="paramname">id</td><td>Apontador para a variável de identificação das Antenas. </td></tr>
+    <tr><td class="paramname">val</td><td>Controlo de erros.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Apontador para o início da lista de Antenas. </dd></dl>
+
+<p class="definition">Definido na linha <a class="el" href="Funcoes_8c_source.html#l00555">555</a> do ficheiro <a class="el" href="Funcoes_8c_source.html">Funcoes.c</a>.</p>
+<div class="dynheader">
+Grafo de chamadas desta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="Funcoes_8c_a7cc58d72f39536ab43bafee7e5b5512b_cgraph.png" border="0" usemap="#aFuncoes_8c_a7cc58d72f39536ab43bafee7e5b5512b_cgraph" alt=""/></div>
+<map name="aFuncoes_8c_a7cc58d72f39536ab43bafee7e5b5512b_cgraph" id="aFuncoes_8c_a7cc58d72f39536ab43bafee7e5b5512b_cgraph">
+<area shape="rect" title="Função para ler dados a partir de um ficheiro não binário." alt="" coords="5,31,99,56"/>
+<area shape="rect" href="Funcoes_8c.html#ad4af5efcb0c2442000fbd5474482ed3a" title="Função para criar uma Antena." alt="" coords="152,5,251,31"/>
+<area shape="poly" title=" " alt="" coords="98,33,138,26,139,31,99,38"/>
+<area shape="rect" href="Funcoes_8c.html#a467dabf8a49fd4d8bc39021e9434c88c" title="Função para inserir uma Antena na respetiva lista." alt="" coords="147,55,256,80"/>
+<area shape="poly" title=" " alt="" coords="99,48,133,54,132,59,99,53"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="abfb28f33e33946265b360122d298dcfa" name="abfb28f33e33946265b360122d298dcfa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abfb28f33e33946265b360122d298dcfa">&#9670;&#160;</a></span>LerFicheiroBinario()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structAntena.html">Antena</a> * LerFicheiroBinario </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>nomeFicheiro</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>val</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Função para ler a informação do Grafo contida num ficheiro binário. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nomeFicheiro</td><td>Nome do ficheiro que contem a informação do grafo. </td></tr>
+    <tr><td class="paramname">id</td><td>Apontador para a variável que contem a identificação da <a class="el" href="structAntena.html">Antena</a>. </td></tr>
+    <tr><td class="paramname">val</td><td>Controlo de erros.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Apontador para o início do grafo. </dd></dl>
+
+<p class="definition">Definido na linha <a class="el" href="Funcoes_8c_source.html#l00727">727</a> do ficheiro <a class="el" href="Funcoes_8c_source.html">Funcoes.c</a>.</p>
+<div class="dynheader">
+Grafo de chamadas desta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="Funcoes_8c_abfb28f33e33946265b360122d298dcfa_cgraph.png" border="0" usemap="#aFuncoes_8c_abfb28f33e33946265b360122d298dcfa_cgraph" alt=""/></div>
+<map name="aFuncoes_8c_abfb28f33e33946265b360122d298dcfa_cgraph" id="aFuncoes_8c_abfb28f33e33946265b360122d298dcfa_cgraph">
+<area shape="rect" title="Função para ler a informação do Grafo contida num ficheiro binário." alt="" coords="5,80,144,105"/>
+<area shape="rect" href="Funcoes_8c.html#ad4af5efcb0c2442000fbd5474482ed3a" title="Função para criar uma Antena." alt="" coords="247,5,345,31"/>
+<area shape="poly" title=" " alt="" coords="101,77,191,39,232,28,234,33,193,45,103,82"/>
+<area shape="rect" href="Funcoes_8c.html#a500e4d8d01f7969a164bfb3517cc3338" title="Função para criar uma Aresta." alt="" coords="249,55,343,80"/>
+<area shape="poly" title=" " alt="" coords="144,82,235,72,235,77,145,87"/>
+<area shape="rect" href="Funcoes_8c.html#a467dabf8a49fd4d8bc39021e9434c88c" title="Função para inserir uma Antena na respetiva lista." alt="" coords="241,104,351,129"/>
+<area shape="poly" title=" " alt="" coords="145,98,228,107,228,112,144,103"/>
+<area shape="rect" href="Funcoes_8c.html#afb5114ede97ca32d3de49fbf335748f2" title="Função que liga a variável id ao destino da Aresta." alt="" coords="192,153,400,179"/>
+<area shape="poly" title=" " alt="" coords="105,103,193,138,224,147,223,153,191,143,103,108"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="afb5114ede97ca32d3de49fbf335748f2" name="afb5114ede97ca32d3de49fbf335748f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb5114ede97ca32d3de49fbf335748f2">&#9670;&#160;</a></span>LigarAntenaDestinoAntenaId()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structAntena.html">Antena</a> * LigarAntenaDestinoAntenaId </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structAntena.html">Antena</a> *&#160;</td>
+          <td class="paramname"><em>antenaHead</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>val</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Função que liga a variável id ao destino da Aresta. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">antenaHead</td><td>Apontador para o início da lista das Antenas. </td></tr>
+    <tr><td class="paramname">val</td><td>Controlo de erros.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Apontador para o início da lista das Antenas </dd></dl>
+
+<p class="definition">Definido na linha <a class="el" href="Funcoes_8c_source.html#l00390">390</a> do ficheiro <a class="el" href="Funcoes_8c_source.html">Funcoes.c</a>.</p>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="Funcoes_8c_afb5114ede97ca32d3de49fbf335748f2_icgraph.png" border="0" usemap="#aFuncoes_8c_afb5114ede97ca32d3de49fbf335748f2_icgraph" alt=""/></div>
+<map name="aFuncoes_8c_afb5114ede97ca32d3de49fbf335748f2_icgraph" id="aFuncoes_8c_afb5114ede97ca32d3de49fbf335748f2_icgraph">
+<area shape="rect" title="Função que liga a variável id ao destino da Aresta." alt="" coords="209,31,417,56"/>
+<area shape="rect" href="Funcoes_8c.html#abfb28f33e33946265b360122d298dcfa" title="Função para ler a informação do Grafo contida num ficheiro binário." alt="" coords="14,5,153,31"/>
+<area shape="poly" title=" " alt="" coords="195,33,153,28,153,23,196,28"/>
+<area shape="rect" href="Funcoes_8c.html#ad4ebad78f96b698698e900d209ed0092" title="Função para ligar as Arestas às respetivas Antenas de origem." alt="" coords="5,55,161,80"/>
+<area shape="poly" title=" " alt="" coords="196,58,162,62,161,57,195,53"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ad4ebad78f96b698698e900d209ed0092" name="ad4ebad78f96b698698e900d209ed0092"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4ebad78f96b698698e900d209ed0092">&#9670;&#160;</a></span>LigarAntenasArestas()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structAntena.html">Antena</a> * LigarAntenasArestas </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structAntena.html">Antena</a> *&#160;</td>
+          <td class="paramname"><em>antenaHead</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structArestas.html">Arestas</a> *&#160;</td>
+          <td class="paramname"><em>arestasHead</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>val</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Função para ligar as <a class="el" href="structArestas.html">Arestas</a> às respetivas Antenas de origem. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">antenaHead</td><td>Apontador para o início da lista das Antenas. </td></tr>
+    <tr><td class="paramname">arestasHead</td><td>Apontador para o início da lista das <a class="el" href="structArestas.html">Arestas</a>. </td></tr>
+    <tr><td class="paramname">val</td><td>Controlo de erros.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Apontador para o início da lista das Antenas. </dd></dl>
+
+<p class="definition">Definido na linha <a class="el" href="Funcoes_8c_source.html#l00256">256</a> do ficheiro <a class="el" href="Funcoes_8c_source.html">Funcoes.c</a>.</p>
+<div class="dynheader">
+Grafo de chamadas desta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="Funcoes_8c_ad4ebad78f96b698698e900d209ed0092_cgraph.png" border="0" usemap="#aFuncoes_8c_ad4ebad78f96b698698e900d209ed0092_cgraph" alt=""/></div>
+<map name="aFuncoes_8c_ad4ebad78f96b698698e900d209ed0092_cgraph" id="aFuncoes_8c_ad4ebad78f96b698698e900d209ed0092_cgraph">
+<area shape="rect" title="Função para ligar as Arestas às respetivas Antenas de origem." alt="" coords="5,5,161,31"/>
+<area shape="rect" href="Funcoes_8c.html#afb5114ede97ca32d3de49fbf335748f2" title="Função que liga a variável id ao destino da Aresta." alt="" coords="209,5,417,31"/>
+<area shape="poly" title=" " alt="" coords="162,15,196,15,196,21,162,21"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a0a74669df35eaf5b7503010b70d21a88" name="a0a74669df35eaf5b7503010b70d21a88"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a74669df35eaf5b7503010b70d21a88">&#9670;&#160;</a></span>mostrarLista()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int mostrarLista </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structAntena.html">Antena</a> *&#160;</td>
+          <td class="paramname"><em>head</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definido na linha <a class="el" href="Funcoes_8c_source.html#l00821">821</a> do ficheiro <a class="el" href="Funcoes_8c_source.html">Funcoes.c</a>.</p>
+
+</div>
+</div>
+<a id="a86d9ea91e8ad19b3cda6baacf129718b" name="a86d9ea91e8ad19b3cda6baacf129718b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86d9ea91e8ad19b3cda6baacf129718b">&#9670;&#160;</a></span>mostrarListaArestas()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int mostrarListaArestas </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structArestas.html">Arestas</a> *&#160;</td>
+          <td class="paramname"><em>head</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definido na linha <a class="el" href="Funcoes_8c_source.html#l00838">838</a> do ficheiro <a class="el" href="Funcoes_8c_source.html">Funcoes.c</a>.</p>
+
+</div>
+</div>
+<a id="a111dfbf7ea252c28e95f431c20cfc22a" name="a111dfbf7ea252c28e95f431c20cfc22a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a111dfbf7ea252c28e95f431c20cfc22a">&#9670;&#160;</a></span>RemoverAntena()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structAntena.html">Antena</a> * RemoverAntena </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structAntena.html">Antena</a> *&#160;</td>
+          <td class="paramname"><em>antenaHead</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>antenaID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>val</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Função para Remover uma <a class="el" href="structAntena.html">Antena</a> e as respetivas <a class="el" href="structArestas.html">Arestas</a> do grafo. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">antenaHead</td><td>Apontador para o início do grafo. </td></tr>
+    <tr><td class="paramname">antenaID</td><td>Identificador da <a class="el" href="structAntena.html">Antena</a> a ser removida. </td></tr>
+    <tr><td class="paramname">val</td><td>Controlo de erros.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Apontador para o início do grafo atualizado. </dd></dl>
+
+<p class="definition">Definido na linha <a class="el" href="Funcoes_8c_source.html#l00439">439</a> do ficheiro <a class="el" href="Funcoes_8c_source.html">Funcoes.c</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

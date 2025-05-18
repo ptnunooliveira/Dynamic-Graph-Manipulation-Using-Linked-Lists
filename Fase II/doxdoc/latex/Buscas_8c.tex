@@ -1,0 +1,251 @@
+\doxysection{Referência ao ficheiro Buscas.\+c}
+\hypertarget{Buscas_8c}{}\label{Buscas_8c}\index{Buscas.c@{Buscas.c}}
+
+
+Ficheiro que contém os algoritmos necessários para a Depth First Traversal e Breadth First Traversal.  
+
+
+{\ttfamily \#include "{}Buscas.\+h"{}}\newline
+Diagrama de dependências de inclusão para Buscas.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Buscas_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Funções}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structAntena}{Antena}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{Buscas_8c_a4179c7165513871db7c6e0685f9c6284}{Procurar\+Antena\+Pelo\+ID}} (\mbox{\hyperlink{structAntena}{Antena}} \texorpdfstring{$\ast$}{*}antena\+Head, int antena\+ID)
+\begin{DoxyCompactList}\small\item\em Função que procura o apontador para a \doxylink{structAntena}{Antena} a partir do id fornecido por parâmetro. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{Buscas_8c_a4a169798f591e840cfb6413956e30a25}{Resetar\+Visitados}} (\mbox{\hyperlink{structAntena}{Antena}} \texorpdfstring{$\ast$}{*}antena\+Head)
+\begin{DoxyCompactList}\small\item\em Função para resetar o campo "{}visitado"{} da struct \doxylink{structAntena}{Antena}. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{Buscas_8c_a8ebddda2454b08b12e7c00f68e512164}{Numero\+Antenas\+Mesma\+Frequencia}} (\mbox{\hyperlink{structAntena}{Antena}} \texorpdfstring{$\ast$}{*}antena\+Head, \mbox{\hyperlink{structAntena}{Antena}} \texorpdfstring{$\ast$}{*}atual)
+\begin{DoxyCompactList}\small\item\em Função para saber quantas Antenas existem com a mesma frequência. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{Buscas_8c_a741b075f0fd46e25493f9b6bbdccaaba}{Depth\+First\+Traversal}} (\mbox{\hyperlink{structAntena}{Antena}} \texorpdfstring{$\ast$}{*}antena\+Head, int antena\+ID)
+\begin{DoxyCompactList}\small\item\em Função recursiva que faz a travessia na profundidade. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{Buscas_8c_a1301bf0da0eb3b63cab15d7daf28b929}{Breadth\+First\+Traversal}} (\mbox{\hyperlink{structAntena}{Antena}} \texorpdfstring{$\ast$}{*}antena\+Head, int antena\+ID)
+\begin{DoxyCompactList}\small\item\em Função não recursiva que faz a travessia na largura. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{Buscas_8c_aae70492309c8bc445d513b41d94c87b3}{Todos\+Caminhos\+Possiveis}} (\mbox{\hyperlink{structAntena}{Antena}} \texorpdfstring{$\ast$}{*}antena\+Head, int origem\+ID, int destino\+ID, int distancia\+Percorrida)
+\begin{DoxyCompactList}\small\item\em Função que mostra todos os caminhos possíveis entre duas Antenas. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descrição detalhada}
+Ficheiro que contém os algoritmos necessários para a Depth First Traversal e Breadth First Traversal. 
+
+\begin{DoxyAuthor}{Autor}
+ptnunooliveira 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Data}
+May 2025 
+\end{DoxyDate}
+
+
+Definido no ficheiro \mbox{\hyperlink{Buscas_8c_source}{Buscas.\+c}}.
+
+
+
+\doxysubsection{Documentação das funções}
+\Hypertarget{Buscas_8c_a1301bf0da0eb3b63cab15d7daf28b929}\label{Buscas_8c_a1301bf0da0eb3b63cab15d7daf28b929} 
+\index{Buscas.c@{Buscas.c}!BreadthFirstTraversal@{BreadthFirstTraversal}}
+\index{BreadthFirstTraversal@{BreadthFirstTraversal}!Buscas.c@{Buscas.c}}
+\doxysubsubsection{\texorpdfstring{BreadthFirstTraversal()}{BreadthFirstTraversal()}}
+{\footnotesize\ttfamily int Breadth\+First\+Traversal (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structAntena}{Antena}} \texorpdfstring{$\ast$}{*}}]{antena\+Head,  }\item[{int}]{antena\+ID }\end{DoxyParamCaption})}
+
+
+
+Função não recursiva que faz a travessia na largura. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em antena\+Head} & Apontador para o início do grafo. \\
+\hline
+{\em antena\+ID} & Identificador da \doxylink{structAntena}{Antena} onde começa a travessia.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+0 em caso de sucesso. 
+\end{DoxyReturn}
+
+
+Definido na linha \mbox{\hyperlink{Buscas_8c_source_l00170}{170}} do ficheiro \mbox{\hyperlink{Buscas_8c_source}{Buscas.\+c}}.
+
+Grafo de chamadas desta função\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Buscas_8c_a1301bf0da0eb3b63cab15d7daf28b929_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{Buscas_8c_a741b075f0fd46e25493f9b6bbdccaaba}\label{Buscas_8c_a741b075f0fd46e25493f9b6bbdccaaba} 
+\index{Buscas.c@{Buscas.c}!DepthFirstTraversal@{DepthFirstTraversal}}
+\index{DepthFirstTraversal@{DepthFirstTraversal}!Buscas.c@{Buscas.c}}
+\doxysubsubsection{\texorpdfstring{DepthFirstTraversal()}{DepthFirstTraversal()}}
+{\footnotesize\ttfamily int Depth\+First\+Traversal (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structAntena}{Antena}} \texorpdfstring{$\ast$}{*}}]{antena\+Head,  }\item[{int}]{antena\+ID }\end{DoxyParamCaption})}
+
+
+
+Função recursiva que faz a travessia na profundidade. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em antena\+Head} & Apontador para o início do grafo. \\
+\hline
+{\em antena\+ID} & Identificador da \doxylink{structAntena}{Antena} onde começa a travessia.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+0 em caso de sucesso. 
+\end{DoxyReturn}
+
+
+Definido na linha \mbox{\hyperlink{Buscas_8c_source_l00137}{137}} do ficheiro \mbox{\hyperlink{Buscas_8c_source}{Buscas.\+c}}.
+
+Grafo de chamadas desta função\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Buscas_8c_a741b075f0fd46e25493f9b6bbdccaaba_cgraph}
+\end{center}
+\end{figure}
+Este é o diagrama das funções que utilizam esta função\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=191pt]{Buscas_8c_a741b075f0fd46e25493f9b6bbdccaaba_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{Buscas_8c_a8ebddda2454b08b12e7c00f68e512164}\label{Buscas_8c_a8ebddda2454b08b12e7c00f68e512164} 
+\index{Buscas.c@{Buscas.c}!NumeroAntenasMesmaFrequencia@{NumeroAntenasMesmaFrequencia}}
+\index{NumeroAntenasMesmaFrequencia@{NumeroAntenasMesmaFrequencia}!Buscas.c@{Buscas.c}}
+\doxysubsubsection{\texorpdfstring{NumeroAntenasMesmaFrequencia()}{NumeroAntenasMesmaFrequencia()}}
+{\footnotesize\ttfamily int Numero\+Antenas\+Mesma\+Frequencia (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structAntena}{Antena}} \texorpdfstring{$\ast$}{*}}]{antena\+Head,  }\item[{\mbox{\hyperlink{structAntena}{Antena}} \texorpdfstring{$\ast$}{*}}]{atual }\end{DoxyParamCaption})}
+
+
+
+Função para saber quantas Antenas existem com a mesma frequência. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em antena\+Head} & Apontador para o início da lista das Antenas. \\
+\hline
+{\em atual} & Apontador para a \doxylink{structAntena}{Antena} que queremos verificar a frequência.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+N{\ucr}mero de Antenas com aquela frequência. 
+\end{DoxyReturn}
+
+
+Definido na linha \mbox{\hyperlink{Buscas_8c_source_l00111}{111}} do ficheiro \mbox{\hyperlink{Buscas_8c_source}{Buscas.\+c}}.
+
+Este é o diagrama das funções que utilizam esta função\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Buscas_8c_a8ebddda2454b08b12e7c00f68e512164_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{Buscas_8c_a4179c7165513871db7c6e0685f9c6284}\label{Buscas_8c_a4179c7165513871db7c6e0685f9c6284} 
+\index{Buscas.c@{Buscas.c}!ProcurarAntenaPeloID@{ProcurarAntenaPeloID}}
+\index{ProcurarAntenaPeloID@{ProcurarAntenaPeloID}!Buscas.c@{Buscas.c}}
+\doxysubsubsection{\texorpdfstring{ProcurarAntenaPeloID()}{ProcurarAntenaPeloID()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structAntena}{Antena}} \texorpdfstring{$\ast$}{*} Procurar\+Antena\+Pelo\+ID (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structAntena}{Antena}} \texorpdfstring{$\ast$}{*}}]{antena\+Head,  }\item[{int}]{antena\+ID }\end{DoxyParamCaption})}
+
+
+
+Função que procura o apontador para a \doxylink{structAntena}{Antena} a partir do id fornecido por parâmetro. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em antena\+Head} & Apontador para o início da lista das Antenas. \\
+\hline
+{\em antena\+ID} & Número de identificação da \doxylink{structAntena}{Antena} a encontrar.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+Apontador para a \doxylink{structAntena}{Antena} encontrada. 
+\end{DoxyReturn}
+
+
+Definido na linha \mbox{\hyperlink{Buscas_8c_source_l00061}{61}} do ficheiro \mbox{\hyperlink{Buscas_8c_source}{Buscas.\+c}}.
+
+Este é o diagrama das funções que utilizam esta função\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Buscas_8c_a4179c7165513871db7c6e0685f9c6284_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{Buscas_8c_a4a169798f591e840cfb6413956e30a25}\label{Buscas_8c_a4a169798f591e840cfb6413956e30a25} 
+\index{Buscas.c@{Buscas.c}!ResetarVisitados@{ResetarVisitados}}
+\index{ResetarVisitados@{ResetarVisitados}!Buscas.c@{Buscas.c}}
+\doxysubsubsection{\texorpdfstring{ResetarVisitados()}{ResetarVisitados()}}
+{\footnotesize\ttfamily bool Resetar\+Visitados (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structAntena}{Antena}} \texorpdfstring{$\ast$}{*}}]{antena\+Head }\end{DoxyParamCaption})}
+
+
+
+Função para resetar o campo "{}visitado"{} da struct \doxylink{structAntena}{Antena}. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em antena\+Head} & Apontador para o início da lista\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+True em caso de sucesso, False caso contrário. 
+\end{DoxyReturn}
+
+
+Definido na linha \mbox{\hyperlink{Buscas_8c_source_l00087}{87}} do ficheiro \mbox{\hyperlink{Buscas_8c_source}{Buscas.\+c}}.
+
+\Hypertarget{Buscas_8c_aae70492309c8bc445d513b41d94c87b3}\label{Buscas_8c_aae70492309c8bc445d513b41d94c87b3} 
+\index{Buscas.c@{Buscas.c}!TodosCaminhosPossiveis@{TodosCaminhosPossiveis}}
+\index{TodosCaminhosPossiveis@{TodosCaminhosPossiveis}!Buscas.c@{Buscas.c}}
+\doxysubsubsection{\texorpdfstring{TodosCaminhosPossiveis()}{TodosCaminhosPossiveis()}}
+{\footnotesize\ttfamily int Todos\+Caminhos\+Possiveis (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structAntena}{Antena}} \texorpdfstring{$\ast$}{*}}]{antena\+Head,  }\item[{int}]{origem\+ID,  }\item[{int}]{destino\+ID,  }\item[{int}]{distancia\+Percorrida }\end{DoxyParamCaption})}
+
+
+
+Função que mostra todos os caminhos possíveis entre duas Antenas. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em antena\+Head} & Apontador para o início do Grafo \\
+\hline
+{\em origem\+ID} & Identificador da \doxylink{structAntena}{Antena} de origem. \\
+\hline
+{\em destino\+ID} & Identificador da \doxylink{structAntena}{Antena} de destino. \\
+\hline
+{\em distancia\+Percorrida} & Distância percorrida em cada caminho.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+Número de caminhos possíveis. 
+\end{DoxyReturn}
+
+
+Definido na linha \mbox{\hyperlink{Buscas_8c_source_l00217}{217}} do ficheiro \mbox{\hyperlink{Buscas_8c_source}{Buscas.\+c}}.
+
+Grafo de chamadas desta função\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Buscas_8c_aae70492309c8bc445d513b41d94c87b3_cgraph}
+\end{center}
+\end{figure}
+Este é o diagrama das funções que utilizam esta função\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=219pt]{Buscas_8c_aae70492309c8bc445d513b41d94c87b3_icgraph}
+\end{center}
+\end{figure}

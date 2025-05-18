@@ -1,0 +1,18 @@
+<map id="Buscas.c" name="Buscas.c">
+<area shape="rect" id="Node000001" title="Ficheiro que contém os algoritmos necessários para a Depth First Traversal e Breadth First Traversal." alt="" coords="194,5,273,31"/>
+<area shape="rect" id="Node000002" href="$Buscas_8h.html" title="Ficheiro que contém as assinaturas usadas em Buscas.c." alt="" coords="193,79,273,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="236,31,236,65,231,65,231,31"/>
+<area shape="rect" id="Node000003" href="$Funcoes_8h.html" title="Ficheiro que cont�m as assinaturas das fun��es usadas em Funcoes.c." alt="" coords="190,152,277,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="229,104,227,139,222,138,224,104"/>
+<area shape="poly" id="edge8_Node000003_Node000002" title=" " alt="" coords="238,152,239,118,245,118,243,152"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="5,225,72,251"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="203,180,84,223,82,218,201,175"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="97,225,167,251"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="219,180,161,219,158,215,216,175"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="192,225,275,251"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="236,178,236,212,231,212,231,178"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="299,225,378,251"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="252,175,312,215,309,220,249,180"/>
+<area shape="rect" id="Node000008" href="$Grafos_8h.html" title="Ficheiro que contem as structs usadas." alt="" coords="403,225,480,251"/>
+<area shape="poly" id="edge7_Node000003_Node000008" title=" " alt="" coords="268,175,395,218,394,223,266,180"/>
+</map>

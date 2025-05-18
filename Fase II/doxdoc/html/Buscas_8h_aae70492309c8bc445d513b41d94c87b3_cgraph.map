@@ -1,0 +1,6 @@
+<map id="TodosCaminhosPossiveis" name="TodosCaminhosPossiveis">
+<area shape="rect" id="Node000001" title="Função que mostra todos os caminhos possíveis entre duas Antenas." alt="" coords="5,29,191,55"/>
+<area shape="poly" id="edge2_Node000001_Node000001" title=" " alt="" coords="62,31,54,21,58,11,73,5,98,3,129,6,141,15,138,20,127,11,98,8,74,10,62,15,59,20,66,28"/>
+<area shape="rect" id="Node000002" href="$Buscas_8c.html#a4179c7165513871db7c6e0685f9c6284" title="Função que procura o apontador para a Antena a partir do id fornecido por parâmetro." alt="" coords="239,29,403,55"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="191,39,225,39,225,45,191,45"/>
+</map>

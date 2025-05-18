@@ -1,0 +1,5 @@
+<map id="LigarAntenasArestas" name="LigarAntenasArestas">
+<area shape="rect" id="Node000001" title="Função para ligar as Arestas às respetivas Antenas de origem." alt="" coords="5,5,161,31"/>
+<area shape="rect" id="Node000002" href="$Funcoes_8c.html#afb5114ede97ca32d3de49fbf335748f2" title="Função que liga a variável id ao destino da Aresta." alt="" coords="209,5,417,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="162,15,196,15,196,21,162,21"/>
+</map>
