@@ -1,4 +1,4 @@
-# ProjectEDA
+# Dynamic Graph Manipulation using Linked Lists
 This repository contains my Advanced Data Structures class project
 
 PT (ii)
