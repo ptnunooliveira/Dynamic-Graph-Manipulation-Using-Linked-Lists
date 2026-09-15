@@ -1,5 +1,5 @@
 # Dynamic Graph Manipulation using Linked Lists
-This repository contains my Advanced Data Structures class project
+This repository contains my Advanced Data Structures class project.
 
 PT (ii)
 Considera-se uma rede de antenas com localizações e frequências específicas. Quando duas antenas partilham a mesma frequência, devem ser conectadas por uma aresta. O objetivo é construir dinamicamente um grafo e permitir operações de análise e manipulação, como travessias e remoções.
